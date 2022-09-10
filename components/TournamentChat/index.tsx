@@ -143,7 +143,7 @@ export default function TournamentChat({ className, id, kind }: Props) {
                 className={styles.form}
                 onSubmit={(event) => {
                   event.preventDefault();
-                  mö;
+                 
                   post(values.message);
                   updateValue('message', '');
                 }}
