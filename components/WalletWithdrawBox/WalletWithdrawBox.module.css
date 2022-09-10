@@ -1,0 +1,148 @@
+[dir="rtl"] {
+  .walletWithdrawBox {
+    .body {
+      .wrapper {
+        .method {
+          svg {
+            &.iban {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .walletWithdrawBox {
+    .body {
+      .wrapper {
+        .method {
+          svg {
+            &.iban {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.walletWithdrawBox {
+  background-color: var(--color-black3);
+
+  border-radius: 8px;
+
+  .header {
+    padding: 12px 10px;
+
+    font-weight: 700;
+
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+
+    border-radius: 8px 8px 0 0;
+
+    transition: padding 150ms ease;
+  }
+
+  .body {
+    display: grid;
+
+    grid-gap: 36px;
+
+    padding: 24px 10px;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    line-height: 1.5;
+
+    color: var(--color-gray);
+
+    transition: padding 150ms ease;
+
+    .wrapper {
+      display: grid;
+
+      align-items: center;
+
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      grid-row-gap: 36px;
+      grid-column-gap: 24px;
+
+      .method {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: row;
+
+        svg {
+          &.iban {
+            display: block;
+
+            width: auto;
+            height: 60px;
+          }
+
+          &.papara {
+            display: block;
+
+            width: auto;
+            height: 35px;
+          }
+
+          &.paypal {
+            display: block;
+
+            width: auto;
+            height: 35px;
+          }
+        }
+
+        img {
+          &.n11 {
+            display: block;
+
+            align-self: center;
+
+            width: auto;
+            height: 35px;
+          }
+        }
+      }
+    }
+
+    .buttonWrapper {
+      display: grid;
+
+      align-items: center;
+      justify-content: center;
+
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (--min-xs) {
+  .walletWithdrawBox {
+    .header {
+      padding: 12px 32px;
+    }
+
+    .body {
+      padding: 24px 32px;
+
+      .buttonWrapper {
+        grid-template-columns: repeat(4, 1fr);
+
+        .button {
+          grid-column: 2/span 2;
+        }
+      }
+    }
+  }
+}

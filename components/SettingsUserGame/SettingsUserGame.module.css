@@ -1,0 +1,158 @@
+[dir="rtl"] {
+  .settingsUserGame {
+    .content {
+      .action {
+        margin: -8px 8px 0 0;
+
+        .username {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .settingsUserGame {
+    .content {
+      .action {
+        margin: -8px 0 0 8px;
+
+        .username {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.settingsUserGame {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+  grid-gap: 16px;
+
+  padding: 16px;
+
+  background-color: var(--color-dark-gray);
+  border-radius: 8px;
+
+  .content {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    .info {
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: space-around;
+
+      font-size: var(--font-size);
+      font-weight: 700;
+    }
+
+    .action {
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: flex-end;
+      justify-content: space-between;
+
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-gray);
+      text-align: center;
+
+      .button {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .muted {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-gray);
+  }
+
+  .button {
+    align-self: flex-start;
+
+    padding: 8px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    &[data-focus-visible-added], &:hover {
+      background-color: var(--color-dark-gray3);
+    }
+
+    svg {
+      display: block;
+
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+@media (--min-lg) {
+  [dir="rtl"]{
+    .settingsUserGame {
+      .topInfo {
+        margin: 0 0 -8px -8px;
+      }
+    }
+  }
+
+  .settingsUserGame {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px 12px 12px 12px;
+
+    .topInfo {
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .avatar {
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 8px;
+    }
+
+    .game {
+      font-size: var(--font-size);
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .username {
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-gray);
+      text-align: center;
+    }
+  }
+}

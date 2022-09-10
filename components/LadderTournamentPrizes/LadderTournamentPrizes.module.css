@@ -1,0 +1,115 @@
+[dir="rtl"] {
+  .ladderTournamentPrizes {
+    .body {
+      .info {
+        .detail {
+          &.reward {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .ladderTournamentPrizes {
+    .body {
+      .info {
+        .detail {
+          &.reward {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ladderTournamentPrizes {
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  .header {
+    padding: 12px 10px;
+
+    font-weight: 700;
+    color: var(--color-white);
+
+    background-color: var(--color-dark-gray);
+
+    border-radius: 8px 8px 0 0;
+
+    transition: padding 150ms ease;
+  }
+
+  .body {
+    display: grid;
+
+    grid-gap: 16px;
+
+    padding: 24px 8px;
+
+    border-radius: 0 0 8px 8px;
+
+    transition: padding 150ms ease;
+
+    .info {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 20px 10px;
+
+      font-size: var(--font-size);
+      font-weight: 600;
+      color: var(--color-white);
+
+      background-color: var(--color-dark-gray);
+      border-radius: 8px;
+
+      transition: padding 150ms ease;
+
+      .detail {
+        display: grid;
+
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 10px;
+
+        align-items: center;
+
+        font-size: var(--font-size);
+        font-weight: 600;
+        color: var(--color-gray);
+
+        &.reward {
+          color: var(--color-white);
+        }
+
+        svg {
+          display: block;
+
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (--min-xs) {
+  .ladderTournamentPrizes {
+    .header {
+      padding: 12px 32px;
+    }
+
+    .body {
+      padding: 24px;
+
+      .info {
+        padding: 20px 30px;
+      }
+    }
+  }
+}

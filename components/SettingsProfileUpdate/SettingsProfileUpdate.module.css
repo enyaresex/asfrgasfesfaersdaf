@@ -1,0 +1,128 @@
+[dir="rtl"] {
+  .settingsProfileUpdate {
+    .form {
+      .fieldset {
+        .phoneInput {
+          .inputPrepend {
+            border-left: none;
+            border-radius: 0  var(--form-component-border-radius) var(--form-component-border-radius) 0;
+          }
+
+          .input {
+            input {
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+            }
+          }
+        }
+
+        .warning {
+          svg {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .settingsProfileUpdate {
+    .form {
+      .fieldset {
+        .phoneInput {
+          .inputPrepend {
+            border-right: none;
+            border-radius: var(--form-component-border-radius) 0 0 var(--form-component-border-radius);
+          }
+
+          .input {
+            input {
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+            }
+          }
+        }
+
+        .warning {
+          svg {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.settingsProfileUpdate {
+  .form {
+    .fieldset {
+      .errors {
+        padding-top: 8px;
+      }
+
+      .phoneInput {
+        display: grid;
+
+        grid-template-columns: auto 1fr;
+
+        .tooltip {
+          font-size: var(--font-size-smaller);
+          font-weight: 500;
+          color: var(--color-gray);
+        }
+
+        .inputPrepend {
+          display: flex;
+
+          align-items: center;
+          justify-content: center;
+
+          padding: 0 12px;
+
+          color: var(--color-gray);
+
+          cursor: not-allowed;
+
+          background-color: var(--color-dark-gray);
+          border: 2px solid var(--color-dark-gray2);
+        }
+      }
+
+      .buttonWrapper {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+      }
+
+      .warning {
+        display: flex;
+
+        align-items: center;
+
+        margin: 8px 0 16px 0;
+
+        font-size: var(--font-size-smaller);
+        font-weight: 500;
+        color: var(--color-gray);
+
+        svg {
+          display: inline-block;
+
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .notVerified {
+        display: grid;
+
+        grid-template-columns: 1fr auto;
+        grid-gap: 16px;
+
+        align-items: center;
+      }
+    }
+  }
+}

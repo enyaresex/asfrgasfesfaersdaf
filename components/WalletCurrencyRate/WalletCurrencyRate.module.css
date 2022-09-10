@@ -1,0 +1,62 @@
+.walletCurrencyRate {
+  position: relative;
+
+  .wrapper {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: center;
+
+    .info {
+      display: grid;
+
+      grid-gap: 10px;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px;
+
+      background-color: var(--color-dark-gray);
+      border-radius: 8px;
+      box-shadow: 0 6px 10px 0 rgba(17, 17, 17, 0.49), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+      svg {
+        display: block;
+
+        width: 72px;
+        height: auto;
+
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .equality {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    margin: auto;
+
+    font-size: var(--font-size-headline2);
+
+    background-color: var(--color-dark-gray);
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 rgba(17, 17, 17, 0.49), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+}

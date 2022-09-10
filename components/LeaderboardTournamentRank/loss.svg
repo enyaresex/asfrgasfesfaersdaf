@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Shield Cancel/Selected </title>
+    <g id="Tournament-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-2-LB-Tournament-Detail-Ongoing-Rankings-360px" transform="translate(-251.000000, -947.000000)">
+            <g id="Chat" transform="translate(8.695652, 803.000000)">
+                <g id="Rank" transform="translate(5.438233, 124.000000)">
+                    <g id="Lose" transform="translate(236.158730, 17.000000)">
+                        <g id="Icons/Shield-Cancel/Selected-" transform="translate(0.000000, 2.000000)">
+                            <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                            <path d="M6.5,5.375 L9.5,8.375 M13.7684904,3.74841978 C14.9694338,4.99004693 11.2640404,14 8.04371198,14 C4.82357103,14 0.836363769,5.28123493 2.31912112,3.74841978 C3.04568722,2.99710599 5.52219949,1.97822923 7.99983677,2.00035426 C10.5772245,2.0234168 13.1561123,3.11541869 13.7684904,3.74841978 Z M6.5,8.375 L9.5,5.375" id="Shield-Cancel" stroke="#EB2C44" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,100 @@
+[dir="rtl"] {
+  .userCardList {
+    .header {
+      .viewAll {
+        margin-right: 50px;
+
+        text-align: left;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .userCardList {
+    .header {
+      .viewAll {
+        margin-left: 50px;
+
+        text-align: right;
+      }
+    }
+  }
+}
+
+.userCardList {
+  .hideList {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    .duelCount {
+      font-size: var(--font-size);
+      font-weight: 500;
+      color: var(--color-gray);
+    }
+
+    .viewAll {
+      font-size: var(--font-size-small);
+      font-weight: 500;
+
+      color: var(--color-gray);
+      text-decoration: none;
+
+      &[data-focus-visible-added],
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .cards {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 16px;
+  }
+
+  .showMoreButtonWrapper {
+    display: grid;
+
+    margin-top: 36px;
+
+    text-align: center;
+
+    .showMore {
+      grid-column: 1 span;
+    }
+  }
+}
+
+@media (--min-sm) {
+  .userCardList {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .showMoreButtonWrapper {
+      grid-template-columns: repeat(3, 1fr);
+
+      .showMore {
+        grid-column: 1 span / -2;
+      }
+    }
+  }
+}
+
+@media (--min-md) {
+  .userCardList {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

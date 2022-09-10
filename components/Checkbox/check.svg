@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Check</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Check/Primary" transform="translate(-5.000000, -5.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+            <path d="M9.71224307,13.294831 L7.21000894,10.7898608 C6.93118856,10.5107356 6.48793566,10.5107356 6.20911528,10.7898608 C5.93029491,11.0689861 5.93029491,11.5127237 6.20911528,11.7918489 L9.20464701,14.7906561 C9.48346738,15.0697813 9.93386953,15.0697813 10.2126899,14.7906561 L17.7908847,7.21133201 C18.0697051,6.93220676 18.0697051,6.48846918 17.7908847,6.20934394 C17.5120643,5.93021869 17.0688114,5.93021869 16.7899911,6.20934394 L9.71224307,13.294831 Z" id="Icon/Check"></path>
+        </g>
+    </g>
+</svg>

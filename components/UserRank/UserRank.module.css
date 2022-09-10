@@ -1,0 +1,37 @@
+.userRank {
+  display: inline-grid;
+
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 8px;
+
+  align-items: center;
+
+  margin-top: 5px;
+
+  font-size: var(--font-size-small);
+  font-weight: 600;
+
+  &.bronze {
+    color: var(--color-bronze);
+  }
+
+  &.gold {
+    color: var(--color-gold);
+  }
+
+  &.silver {
+    color: var(--color-gray);
+  }
+
+  &.platinum {
+    color: var(--color-platinum);
+  }
+
+  svg {
+    display: block;
+
+    width: 13px;
+
+    height: 16px;
+  }
+}

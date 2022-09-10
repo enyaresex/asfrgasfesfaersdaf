@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Arrows/Push Right/Selected</title>
+    <g id="Icons/Arrows/Push-Right/Selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            <path d="M6.29,8.11 L10.18,12 L6.29,15.89 C5.9,16.28 5.9,16.91 6.29,17.3 C6.68,17.69 7.31,17.69 7.7,17.3 L12.29,12.71 C12.68,12.32 12.68,11.69 12.29,11.3 L7.7,6.7 C7.31,6.31 6.68,6.31 6.29,6.7 C5.91,7.09 5.91,7.73 6.29,8.11 Z" id="🔹-Icon-Color" fill="#EB2C44"></path>
+            <path d="M12.29,8.11 L16.18,12 L12.29,15.89 C11.9,16.28 11.9,16.91 12.29,17.3 C12.68,17.69 13.31,17.69 13.7,17.3 L18.29,12.71 C18.68,12.32 18.68,11.69 18.29,11.3 L13.7,6.7 C13.31,6.31 12.68,6.31 12.29,6.7 C11.91,7.09 11.91,7.73 12.29,8.11 Z" id="🔹-Icon-Color" fill="#EB2C44"></path>
+        </g>
+    </g>
+</svg>

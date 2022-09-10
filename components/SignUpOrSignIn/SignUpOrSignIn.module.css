@@ -1,0 +1,79 @@
+.signUpOrSignIn {
+  margin: 0 auto;
+  padding: 25px 20px;
+
+  background-color: var(--color-black);
+
+  border: 2px solid var(--color-dark-gray2);
+  border-radius: 16px;
+
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.5);
+
+  .header {
+    display: grid;
+
+    grid-auto-flow: row;
+    grid-gap: 14px;
+
+    .title {
+      padding: 0 10px;
+
+      text-align: center;
+
+      svg {
+        display: inline-block;
+
+        height: 1em;
+
+        vertical-align: text-bottom;
+      }
+    }
+
+    .description {
+      font-weight: 600;
+
+      text-align: center;
+
+      color: var(--color-gray);
+    }
+
+    .stateButton {
+      font-size: var(--font-size);
+      font-weight: 600;
+
+      text-decoration: none;
+
+      cursor: pointer;
+
+      color: var(--color-red);
+
+      &[data-focus-visible-added], &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .buttonWrapper {
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    margin-top: 20px;
+  }
+}
+
+@media (--min-lg) {
+  .signUpOrSignIn {
+    .header {
+      .title {
+        font-size: var(--font-size-headline2);
+      }
+
+      .description {
+        font-size: var(--font-size);
+      }
+    }
+  }
+}

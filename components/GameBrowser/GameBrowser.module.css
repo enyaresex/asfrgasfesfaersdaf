@@ -1,0 +1,135 @@
+[dir="rtl"] {
+  .gamesBrowser {
+    .content {
+      .navigation {
+        &.next {
+          margin-right: 10px;
+        }
+
+        &.prev {
+          margin-left: 10px;
+
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .gamesBrowser {
+    .content {
+      .navigation {
+        &.next {
+          margin-left: 10px;
+
+          transform: rotate(180deg);
+        }
+
+        &.prev {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.gamesBrowser {
+  margin: 40px auto;
+
+  .content {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    margin-top: 20px;
+
+    .slider {
+      max-width: calc(100vw - 60px);
+
+      padding: 10px 0;
+
+      .slide {
+        width: 140px;
+
+        overflow: hidden;
+
+        border-radius: 8px;
+
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.18);
+
+        transition: transform 50ms ease;
+
+        &:focus-within, &:hover {
+          transform: scale(1.1);
+        }
+
+        .anchor {
+          display: block;
+
+          border: 1px solid transparent;
+
+          img {
+            display: block;
+
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      display: none;
+
+      flex: 0 0 auto;
+
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+
+      cursor: pointer;
+      visibility: visible;
+
+      transition: visibility 150ms ease;
+
+      svg {
+        display: block;
+
+        width: 100%;
+        max-height: 100%;
+
+        fill: var(--color-gray);
+
+        transition: fill var(--transition-duration) ease;
+      }
+
+      &:not(.disabled)[data-focus-visible-added], &:not(.disabled):hover {
+        svg {
+          fill: var(--color-white);
+        }
+      }
+
+      &.disabled {
+        cursor: not-allowed;
+
+        opacity: 0.1;
+      }
+    }
+  }
+}
+
+@media (--min-sm) {
+  .gamesBrowser {
+    .content {
+      .slider {
+        max-width: none;
+      }
+
+      .navigation {
+        display: block;
+      }
+    }
+  }
+}

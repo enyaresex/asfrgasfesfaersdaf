@@ -1,0 +1,35 @@
+.tabs {
+  .header {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 1px;
+      left: 0;
+
+      display: block;
+
+      height: 1px;
+
+      content: '';
+
+      background-color: var(--color-gray);
+    }
+
+    .links {
+      display: flex;
+
+      align-items: stretch;
+
+      flex-direction: row;
+
+      overflow-x: auto;
+    }
+  }
+
+  .body {
+    padding-top: 32px;
+  }
+}

@@ -1,0 +1,196 @@
+[dir="rtl"] {
+  .userAbout {
+    .header {
+      text-align: right;
+
+      svg {
+        margin-right: 30px;
+      }
+    }
+
+    .content {
+      .info {
+        .country {
+          img {
+            margin-left: 8px;
+          }
+        }
+
+        .socials {
+          .socialLink {
+            margin-left: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .userAbout {
+    .header {
+      text-align: left;
+
+      svg {
+        margin-left: 30px;
+      }
+    }
+
+    .content {
+      .info {
+        .country {
+          img {
+            margin-right: 8px;
+          }
+        }
+
+        .socials {
+          .socialLink {
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.userAbout {
+  &.open {
+    .header {
+      border-radius: 8px 8px 0 0;
+
+      svg {
+        width: 18px;
+        height: 18px;
+
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    font-size: var(--font-size);
+    font-weight: 700;
+
+    color: var(--color-white);
+
+    cursor: pointer;
+
+    background-color: var(--color-dark-gray);
+
+    border-radius: 8px;
+
+    transition: background-color 100ms ease;
+
+    svg {
+      width: 17px;
+      height: 17px;
+
+      fill: var(--color-gray);
+
+      transition: transform 150ms ease;
+
+      transform: rotate(0);
+    }
+
+    &[data-focus-visible-added], &:hover, &:active {
+      background-color: var(--color-dark-gray2);
+    }
+  }
+
+  .content {
+    display: grid;
+
+    grid-gap: 20px;
+
+    padding: 24px 16px 32px 16px;
+
+    background-color: var(--color-black3);
+    border-radius: 0 0 8px 8px;
+
+    .info {
+      display: flex;
+
+      flex-direction: column;
+
+      .title {
+        margin-bottom: 14px;
+
+        font-size: var(--font-size);
+        font-weight: 700;
+        color: var(--color-white);
+      }
+
+      .bio {
+        font-size: var(--font-size);
+        font-weight: 500;
+        color: var(--color-gray);
+      }
+
+      .country {
+        display: flex;
+
+        align-items: center;
+
+        font-size: var(--font-size);
+        font-weight: 500;
+        color: var(--color-gray);
+
+        img {
+          display: block;
+
+          width: 36px;
+          height: 24px;
+        }
+      }
+
+      .language {
+        align-self: flex-start;
+
+        padding: 8px 16px;
+
+        font-size: var(--font-size);
+        font-weight: 500;
+        color: var(--color-gray);
+
+        text-align: center;
+
+        background-color: var(--color-dark-gray);
+        border-radius: 15px;
+      }
+
+      .socials {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        .socialLink {
+          margin-bottom: 8px;
+
+          cursor: pointer;
+
+          svg {
+            display: block;
+
+            height: 32px;
+          }
+
+          &[data-focus-visible-added], &:hover {
+            svg {
+              filter: drop-shadow(0px 2px 4px var(--color-gray));
+            }
+          }
+        }
+      }
+    }
+  }
+}

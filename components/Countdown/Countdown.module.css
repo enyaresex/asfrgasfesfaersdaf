@@ -1,0 +1,18 @@
+.countdown {
+  font-size: var(--font-size-headline1);
+  font-weight: bold;
+  color: var(--color-white);
+  text-align: center;
+
+  &.orange {
+    color: var(--color-orange);
+  }
+
+  &.white {
+    color: var(--color-white);
+  }
+
+  &.yellow {
+    color: var(--color-yellow);
+  }
+}

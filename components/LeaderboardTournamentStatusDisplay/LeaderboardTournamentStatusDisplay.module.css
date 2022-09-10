@@ -1,0 +1,63 @@
+.leaderboardTournamentStatusDisplay {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background-color: var(--color-black3);
+
+  border: solid 1px transparent;
+
+  &.sizeLarge {
+    align-self: flex-start;
+
+    padding: 6px 10px;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+
+    border-radius: 15px;
+  }
+
+  &.sizeSmall {
+    width: 110px;
+    height: 30px;
+
+    font-size: var(--font-size-smaller);
+    font-weight: 700;
+
+    border-radius: 6px;
+  }
+
+  &.FINISHED {
+    color: var(--color-gray);
+
+    border-color: var(--color-gray);
+  }
+
+  &.FUTURE {
+    color: var(--color-green);
+
+    border-color: var(--color-green);
+  }
+
+  &.IN_PROGRESS {
+    color: var(--color-orange);
+
+    border-color: var(--color-orange);
+  }
+
+  &.IN_REVIEW {
+    color: var(--color-yellow);
+
+    border-color: var(--color-yellow);
+  }
+
+  &.PAUSED {
+    color: var(--color-red);
+
+    border-color: var(--color-red);
+  }
+}

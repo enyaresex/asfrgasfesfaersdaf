@@ -1,0 +1,50 @@
+[dir="rtl"] {
+  .gameModeTooltip {
+    .content {
+      svg {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .gameModeTooltip {
+    .content {
+      svg {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.gameModeTooltip {
+  .content {
+    display: flex;
+
+    align-items: center;
+
+    font-size: var(--font-size-smaller);
+    font-weight: 500;
+    color: var(--color-gray);
+
+    transition: color 150ms ease;
+
+    svg {
+      display: block;
+
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &[data-focus-visible-added], &:hover {
+    .content {
+      text-decoration: underline;
+
+      svg {
+        filter: drop-shadow(0 0 5px var(--color-white3));
+      }
+    }
+  }
+}

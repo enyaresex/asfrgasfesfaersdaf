@@ -1,0 +1,250 @@
+[dir="rtl"] {
+  .userProfileProgress {
+    .header {
+      text-align: right;
+    }
+
+    .step {
+      .action {
+        text-align: left;
+
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .userProfileProgress {
+    .header {
+      text-align: left;
+    }
+
+    .step {
+      .action {
+        text-align: right;
+
+        svg {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}
+
+.userProfileProgress {
+  position: relative;
+
+  min-width: 100%;
+  height: min-content;
+
+  .header {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 14px 32px;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-white);
+
+    cursor: pointer;
+
+    background-color: var(--color-black3);
+    border-radius: 8px;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.33), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+    transition: background-color 100ms ease;
+
+    &[data-focus-visible-added], &:hover {
+      background-color: var(--color-black2);
+    }
+
+    &.opened {
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
+  .progressBar {
+    width: 100%;
+
+    .summary {
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+
+      justify-content: space-between;
+
+      width: 100%;
+
+      margin: 10px 0 20px 0;
+
+      font-size: var(--font-size-small);
+      font-weight: 700;
+      color: var(--color-white);
+
+      .coin {
+        font-size: var(--font-size);
+        font-weight: bold;
+        color: var(--color-green);
+      }
+
+      .gained {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: flex-end;
+
+        font-size: var(--font-size-small);
+        font-weight: 700;
+        color: var(--color-gray);
+
+        svg {
+          display: block;
+
+          height: 14px;
+
+          margin: 0 5px;
+        }
+      }
+    }
+
+    .subText {
+      width: 100%;
+
+      margin: 20px 0 10px 0;
+
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-gray);
+    }
+  }
+
+  .content {
+    padding: 20px 20px 48px 20px;
+
+    margin-top: 2px;
+
+    background-color: var(--color-black3);
+
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.33);
+  }
+
+  .progress {
+    margin-bottom: 36px;
+  }
+
+  .wrapper {
+    display: grid;
+
+    grid-gap: 30px;
+  }
+
+  .step {
+    position: relative;
+
+    display: grid;
+
+    flex: 1;
+
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 15px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    color: var(--color-gray);
+
+    transition: opacity 100ms ease;
+
+    .detail {
+      display: grid;
+
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 12px;
+
+      align-items: center;
+
+      font-weight: 600;
+      color: var(--color-white);
+
+      svg {
+        display: block;
+
+        width: 25px;
+        min-width: 25px;
+        height: 25px;
+        min-height: 25px;
+      }
+    }
+
+    &.muted {
+      opacity: 0.3;
+    }
+
+    &.ended {
+      margin-top: 24px;
+    }
+  }
+
+  .toggle {
+    position: absolute;
+    right: 0;
+    bottom: -24px;
+    left: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 56px;
+    height: 24px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    background-color: var(--color-black3);
+    border-radius: 0 0 12px 12px;
+
+    &[data-focus-visible-added], &:hover {
+      background-color: var(--color-black2);
+    }
+
+    svg {
+      display: block;
+
+      width: 12px;
+      height: 12px;
+
+      transition: transform 100ms ease;
+      transform: rotate(270deg);
+    }
+
+    &.collapsed {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

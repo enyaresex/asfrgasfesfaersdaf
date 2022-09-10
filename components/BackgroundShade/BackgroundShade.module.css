@@ -1,0 +1,28 @@
+.backgroundShade {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.75);
+
+  transition: all 150ms ease;
+
+  &:global {
+    &.enter,
+    &.exit.exit-active {
+      opacity: 0;
+
+      transform: translateY(-10px);
+    }
+
+    &.enter.enter-active,
+    &.exit {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+  }
+}

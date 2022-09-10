@@ -1,0 +1,29 @@
+.duelDetail {
+  .wrapper {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 32px;
+
+    .col {
+      display: flex;
+
+      flex-direction: column;
+
+      > * {
+        &:not(:first-child) {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media (--min-lg) {
+  .duelDetail {
+    .wrapper {
+      grid-template-columns: 70% 30%;
+      grid-row-gap: 48px;
+    }
+  }
+}

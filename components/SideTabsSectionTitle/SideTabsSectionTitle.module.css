@@ -1,0 +1,20 @@
+[dir="rtl"] {
+  .sideTabsSectionTitle {
+    padding: 16px 28px 16px 16px;
+  }
+}
+
+[dir="ltr"] {
+  .sideTabsSectionTitle {
+    padding: 16px 16px 16px 28px;
+  }
+}
+
+.sideTabsSectionTitle {
+  font-size: var(--color-white);
+  font-weight: 700;
+
+  &:not(:first-child) {
+    margin-top: 14px;
+  }
+}

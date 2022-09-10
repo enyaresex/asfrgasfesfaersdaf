@@ -1,0 +1,18 @@
+.settingUpdateGameAccounts {
+  > * {
+    margin-bottom: 24px;
+  }
+
+  .form {
+    .muted {
+      font-size: var(--font-size-small);
+      font-weight: 500;
+      line-height: 1.43;
+      color: var(--color-gray);
+    }
+
+    .fieldset {
+      text-align: center;
+    }
+  }
+}

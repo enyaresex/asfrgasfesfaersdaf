@@ -1,0 +1,65 @@
+[dir="rtl"] {
+  .notifications {
+    .header {
+      .markAllAsReadButton {
+        margin-right: auto;
+      }
+    }
+  }
+
+}
+
+[dir="ltr"] {
+  .notifications {
+    .header {
+      .markAllAsReadButton {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.notifications {
+  .header {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    margin-top: 40px;
+
+    .markAllAsReadButton {
+      padding: 10px;
+
+      font-weight: 700;
+
+      color: var(--color-white);
+
+      cursor: pointer;
+
+      transition: background-color 150ms ease;
+
+      &[data-focus-visible-added], &:hover {
+        background-color: var(--color-dark-gray);
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .notification {
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  .loadMore {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    margin-top: 20px;
+  }
+}

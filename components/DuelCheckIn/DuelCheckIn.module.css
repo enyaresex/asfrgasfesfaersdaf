@@ -1,0 +1,80 @@
+.duelCheckIn {
+  .wrapper {
+    display: grid;
+
+    grid-gap: 14px;
+
+    padding: 16px;
+
+    text-align: center;
+
+    background-color: var(--color-black3);
+    border-radius: 8px;
+
+    .inviteMessage {
+      display: grid;
+
+      grid-template-columns: auto auto;
+      grid-gap: 10px;
+
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+
+      font-size: var(--font-size);
+      font-weight: 600;
+      color: var(--color-yellow);
+
+      .user {
+        font-weight: 700;
+      }
+
+      &.white {
+        color: var(--color-white);
+      }
+    }
+
+    .details {
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-gray);
+    }
+
+    .cta {
+      display: grid;
+
+      grid-template-columns: minmax(min-content, 45%);
+
+      grid-gap: 18px;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 20px;
+
+      text-align: center;
+
+      svg {
+        display: block;
+
+        width: 32px;
+        height: 28px;
+      }
+    }
+
+    .cancelDuel {
+      margin-top: 8px;
+
+      font-size: var(--font-size-smaller);
+      font-weight: 600;
+      color: var(--color-gray);
+      text-decoration: underline;
+
+      cursor: pointer;
+
+      &[data-focus-visible-added], &:hover {
+        color: var(--color-white);
+      }
+    }
+  }
+}

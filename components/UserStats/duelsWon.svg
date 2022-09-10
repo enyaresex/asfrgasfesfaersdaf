@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Shield Approve/Primary </title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.584314 0 0 0 0 0.603922 0 0 0 0 0.635294 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Profile-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gamer-Arena-Profile-1-576px" transform="translate(-51.000000, -1035.000000)">
+            <g id="Stats" transform="translate(24.000000, 959.000000)">
+                <g id="Icons/Shield-Approve/Primary-" transform="translate(24.000000, 73.000000)" filter="url(#filter-1)">
+                    <g>
+                        <rect id="Rectangle" x="0" y="0" width="36" height="36"></rect>
+                        <path d="M13.4914107,16.7424917 L16.7727708,20.0238411 L23.3527878,13.4442672 M30.9791023,8.43394452 C33.6812251,11.2276056 25.3440899,31.5 18.0987727,31.5 C10.8530335,31.5 1.88181707,11.8827786 5.21802115,8.43394452 C6.8527949,6.74348847 12.4249476,4.45101576 17.9996316,4.50079709 C23.7987541,4.55268781 29.6012517,7.00969205 30.9791023,8.43394452 Z" id="Shield-Approve" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

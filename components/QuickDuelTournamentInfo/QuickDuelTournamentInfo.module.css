@@ -1,0 +1,81 @@
+[dir="rtl"] {
+  .quickDuelTournamentInfo {
+    .avatar {
+      .cup {
+        left: 16%;
+
+        transform: translate(-50%, 50%);
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .quickDuelTournamentInfo {
+    .avatar {
+      .cup {
+        right: 16%;
+
+        transform: translate(50%, 50%);
+      }
+    }
+  }
+}
+
+.quickDuelTournamentInfo {
+  display: flex;
+
+  flex-direction: row;
+
+  gap: 12px;
+
+  align-items: center;
+  justify-content: center;
+
+  .avatar {
+    position: relative;
+
+    .cup {
+      position: absolute;
+
+      bottom: 16%;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      width: 24px;
+      height: 24px;
+
+      background-color: var(--color-red);
+      border-radius: 50%;
+
+      svg {
+        display: block;
+
+        width: 16px;
+        height: auto;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-white);
+
+    .muted {
+      font-size: var(--font-size-smaller);
+      color: var(--color-gray);
+    }
+  }
+}

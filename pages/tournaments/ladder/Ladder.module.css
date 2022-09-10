@@ -1,0 +1,35 @@
+.ladder {
+  .container {
+    .tabs {
+      margin: 30px 0;
+
+      .generalWrapper {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+
+        > * {
+          width: 100%;
+
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (--min-md) {
+  .ladder {
+    .container {
+      .tabs {
+        .generalWrapper {
+          .tournamentInfo, .tournamentPrizes {
+            width: calc(50% - 12px);
+          }
+        }
+      }
+    }
+  }
+}

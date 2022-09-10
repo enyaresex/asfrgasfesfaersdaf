@@ -1,0 +1,19 @@
+.tippy {
+  color: var(--color-white);
+
+  background-color: var(--color-dark-gray);
+
+  border-radius: 8px;
+
+  :global {
+    .tippy-content {
+      padding: 10px 16px;
+
+      font-size: var(--font-size-small);
+    }
+
+    .tippy-arrow {
+      color: var(--color-dark-gray);
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.leaderboardTournamentQuickDuel {
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  .header {
+    padding: 12px 10px;
+
+    font-weight: 700;
+    color: var(--color-white);
+
+    background-color: var(--color-dark-gray);
+
+    border-radius: 8px 8px 0 0;
+  }
+
+  .body {
+    padding: 24px 10px;
+
+    .muted {
+      font-size: var(--font-size-small);
+      font-weight: 500;
+      line-height: 1.43;
+      color: var(--color-gray);
+    }
+
+    .fieldset {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 8px;
+
+      justify-content: center;
+
+      .formGroup {
+        flex: 1;
+
+        margin: 5px 0;
+      }
+
+      .button {
+        margin: 18px 0;
+      }
+    }
+
+    .sub {
+      display: grid;
+
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 10px;
+
+      align-items: center;
+      justify-content: space-between;
+
+      margin: 10px 0;
+
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-gray);
+
+      .gameModeTooltip {
+        > * {
+          font-size: var(--font-size-small);
+          font-weight: 600;
+          color: var(--color-gray);
+        }
+      }
+    }
+  }
+}
+
+@media (--min-xs) {
+  .leaderboardTournamentQuickDuel {
+    .header {
+      padding: 12px 32px;
+    }
+
+    .body {
+      padding: 24px;
+    }
+  }
+}
+
+@media (--min-md) {
+  [dir="rtl"] {
+    .leaderboardTournamentQuickDuel {
+      .body {
+        .fieldset {
+          &:not(:last-child) {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  [dir="ltr"] {
+    .leaderboardTournamentQuickDuel {
+      .body {
+        .fieldset {
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .leaderboardTournamentQuickDuel {
+    .body {
+      .fieldset {
+        flex-direction: row;
+
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .formGroup {
+          margin: 16px 0;
+        }
+      }
+
+      .sub {
+        grid-gap: 28px;
+
+        justify-content: flex-start;
+
+        margin: 0;
+      }
+    }
+  }
+}

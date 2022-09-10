@@ -1,0 +1,66 @@
+.toggle {
+  display: flex;
+  align-items: center;
+
+  & .toggleSwitch {
+    position: relative;
+
+    display: inline-block;
+
+    & .switch {
+      position: absolute;
+
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 40px;
+      height: 22px;
+
+      cursor: pointer;
+
+      background-color: #959aa2;
+
+      border-radius: 25px;
+
+      transition: background-color 0.2s ease;
+
+      &::before {
+        position: absolute;
+
+        top: 50%;
+        left: 3px;
+        width: 16px;
+        height: 16px;
+
+        content: "";
+
+        background-color: #ffffff;
+
+        border-radius: 50%;
+
+        transition: transform 0.3s ease;
+        transform: translateY(-50%);
+      }
+    }
+
+    & input[type="checkbox"] {
+      display: none;
+
+      &:checked + .switch {
+        background-color: #48b474;
+
+        &::before {
+          background-color: #ffffff;
+
+          transform: translateY(-50%) translateX(17px);
+        }
+      }
+    }
+
+    & .labelText {
+      padding-left: 55px;
+    }
+  }
+}

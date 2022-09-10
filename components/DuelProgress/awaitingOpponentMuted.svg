@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Popups/Components/Timeline/Current Step/Default</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Duel-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.253952753">
+        <g id="Gamer-Arena--Duel-Detail---Progress-Blank-360px" transform="translate(-30.000000, -138.000000)">
+            <g id="Popups/Components/Timeline/Current-Step/Default" transform="translate(30.000000, 138.000000)">
+                <circle fill="#4F515C" cx="12.5" cy="12.5" r="12.5"></circle>
+                <g filter="url(#filter-1)" id="question">
+                    <g transform="translate(8.000000, 6.000000)">
+                        <path d="M4.8,12.4 C4.8,12.8418238 4.44182385,13.2 4,13.2 C3.55817615,13.2 3.2,12.8418238 3.2,12.4 C3.2,11.9581762 3.55817615,11.6 4,11.6 C4.44182385,11.6 4.8,11.9581762 4.8,12.4 Z" id="Path" stroke="#979797" fill="#000000" fill-rule="nonzero"></path>
+                        <path d="M4,9.2 C3.64932145,9.2 3.36471501,8.92495315 3.36471501,8.58605348 L3.36471501,7.75926418 C3.36471501,6.97998978 3.87638621,6.28165558 4.63699109,6.02219722 C5.64916633,5.67760178 6.32943002,4.63542158 6.32943002,3.87908023 C6.32943002,2.6372475 5.28499417,1.62789303 4,1.62789303 C2.71500583,1.62789303 1.67056998,2.6372475 1.67056998,3.87908023 C1.67056998,4.21797989 1.38596354,4.49302674 1.03528499,4.49302674 C0.684606446,4.49302674 0.4,4.21797989 0.4,3.87908023 C0.4,1.96109692 2.01457931,0.4 4,0.4 C5.98542069,0.4 7.6,1.96109692 7.6,3.87908023 C7.6,5.24457164 6.48437376,6.69430082 5.05963551,7.18054162 C4.80558354,7.26642821 4.63528499,7.49965594 4.63528499,7.76001362 L4.63528499,8.58605348 C4.63528499,8.92495315 4.35067855,9.2 4,9.2 L4,9.2 Z" id="Path" stroke="#979797" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

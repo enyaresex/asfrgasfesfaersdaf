@@ -1,0 +1,82 @@
+.duelJoin {
+  padding: 10px 12px 20px 12px;
+
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  &.onlyButton {
+    display: grid;
+
+    grid-gap: 12px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 12px;
+
+    .joinButton {
+      text-align: center;
+    }
+  }
+
+  .fieldset {
+    display: grid;
+
+    grid-template-columns: 1fr 0.5fr;
+    grid-gap: 8px;
+
+    align-items: center;
+  }
+
+  .warning {
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    color: var(--color-gray);
+
+    a {
+      font-weight: bold;
+      color: var(--color-white);
+      text-decoration: underline;
+
+      &[data-focus-visible-added], &:hover {
+        color: var(--color-red);
+      }
+    }
+  }
+
+  .ratingWarning {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 8px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8px;
+
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    color: var(--color-red);
+
+    svg {
+      display: block;
+
+      width: 16px;
+      height: auto;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+}
+
+@media (--min-md) {
+  .duelJoin {
+    .fieldset {
+      grid-gap: 14px;
+    }
+  }
+}

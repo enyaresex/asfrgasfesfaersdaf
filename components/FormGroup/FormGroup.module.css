@@ -1,0 +1,17 @@
+.formGroup {
+  margin: 16px 0;
+
+  .message {
+    margin-top: 2px;
+
+    font-size: var(--font-size-tiny);
+    font-weight: 500;
+  }
+
+  /* message status */
+  &.hasError {
+    .message {
+      color: var(--color-red);
+    }
+  }
+}

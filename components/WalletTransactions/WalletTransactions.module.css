@@ -1,0 +1,200 @@
+[dir="rtl"] {
+  .walletTransactions {
+    .header {
+      text-align: right;
+
+      svg {
+        margin-right: 30px;
+      }
+    }
+
+    .body {
+      .content {
+        .item {
+          .amount {
+            text-align: left;
+          }
+        }
+      }
+
+      .sub {
+        :last-child {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .walletTransactions {
+    .header {
+      text-align: left;
+
+      svg {
+        margin-left: 30px;
+      }
+    }
+
+    .body {
+      .content {
+        .item {
+          .amount {
+            text-align: right;
+          }
+        }
+      }
+
+      .sub {
+        :last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.walletTransactions {
+  width: 100%;
+
+  &.open {
+    .header {
+      border-radius: 8px 8px 0 0;
+
+      svg {
+        width: 18px;
+        height: 18px;
+
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 12px 10px;
+
+    font-size: var(--font-size);
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: left;
+
+    cursor: pointer;
+
+    background-color: var(--color-dark-gray);
+
+    border-radius: 8px;
+
+    transition: background-color 100ms ease;
+
+    svg {
+      width: 17px;
+      height: 17px;
+
+      fill: var(--color-gray);
+
+      transition: transform 150ms ease;
+
+      transform: rotate(0);
+    }
+
+    &[data-focus-visible-added], &:hover, &:active {
+      background-color: var(--color-dark-gray2);
+    }
+  }
+
+  .body {
+    display: grid;
+
+    grid-gap: 20px;
+
+    padding: 24px 10px;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-white);
+
+    background-color: var(--color-black3);
+    border-radius: 0 0 8px 8px;
+
+    transition: padding 150ms ease;
+
+    .content {
+      .empty {
+        color: var(--color-gray);
+        text-align: center;
+      }
+
+      .item {
+        display: grid;
+
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 20px;
+
+        align-items: center;
+
+        padding: 8px 16px;
+
+        &:nth-child(odd) {
+          background-color: var(--color-dark-gray);
+          border-radius: 8px;
+        }
+
+        .icon {
+          svg {
+            display: block;
+
+            width: auto;
+            height: 20px;
+          }
+        }
+
+        .details {
+          display: flex;
+
+          flex: 1;
+
+          flex-direction: column;
+
+          .date {
+            color: var(--color-gray);
+          }
+
+          .kind {
+            font-weight: 700;
+          }
+        }
+
+        .amount {
+          font-size: var(--font-size);
+          font-weight: 700;
+        }
+      }
+    }
+
+    .sub {
+      display: flex;
+
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (--min-xs) {
+  .walletTransactions {
+    .header {
+      padding: 12px 32px;
+    }
+
+    .body {
+      padding: 24px 32px;
+    }
+  }
+}

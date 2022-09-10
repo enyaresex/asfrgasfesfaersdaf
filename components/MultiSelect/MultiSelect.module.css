@@ -1,0 +1,181 @@
+[dir="rtl"] {
+  .multiSelect {
+    .summary {
+      .input {
+        padding: 10px var(--form-component-horizontal-padding) 0 50px;
+
+        background: url("./arrow.svg") no-repeat left var(--form-component-horizontal-padding) center;
+      }
+    }
+
+    &.sizeLarge {
+      .input {
+        padding-top: 18px;
+      }
+    }
+
+    &.sizeMedium {
+      .input {
+        padding-top: 16px;
+      }
+    }
+
+    &.sizeSmall {
+      .input {
+        padding-top: 14px;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .multiSelect {
+    .summary {
+      .input {
+        padding: 10px 50px 0 var(--form-component-horizontal-padding);
+
+        background: url("./arrow.svg") no-repeat right var(--form-component-horizontal-padding) center;
+      }
+    }
+
+    &.sizeLarge {
+      .input {
+        padding-top: 18px;
+      }
+    }
+
+    &.sizeMedium {
+      .input {
+        padding-top: 16px;
+      }
+    }
+
+    &.sizeSmall {
+      .input {
+        padding-top: 14px;
+      }
+    }
+  }
+}
+
+.multiSelect {
+  position: relative;
+
+  .summary::marker {
+    display: none;
+  }
+
+  .summary {
+    &:first-of-type {
+      list-style-type: none;
+    }
+
+    .input {
+      font-weight: 700;
+
+      cursor: pointer;
+
+      background-color: var(--color-black2);
+      background-size: 12px auto;
+
+      color: var(--color-white);
+
+      border: 2px solid var(--color-dark-gray2);
+      border-radius: var(--form-component-border-radius);
+
+      transition: border-color var(--transition-duration) ease;
+    }
+
+    &[data-focus-visible-added], &:hover {
+      .input {
+        border-color: var(--color-red);
+      }
+    }
+  }
+
+  .options {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+
+    width: 100%;
+    max-height: 300px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    padding: 16px;
+
+    overflow: auto;
+
+    background-color: var(--color-black3);
+
+    border-radius: 8px;
+
+    .clearButtonWrapper {
+      display: flex;
+
+      justify-content: flex-end;
+
+      flex-direction: row;
+
+      .clearButton {
+        font-weight: 600;
+
+        color: var(--color-white);
+
+        border-radius: 4px;
+
+        &[data-focus-visible-added],
+        &:hover {
+          background-color: var(--color-dark-gray2);
+        }
+
+        &:active {
+          background-color: var(--color-dark-gray3);
+        }
+      }
+    }
+
+    .formGroup {
+      margin: 2px 0;
+
+      .checkbox {
+        display: flex;
+
+        padding: 4px;
+
+        color: var(--color-gray);
+      }
+    }
+  }
+
+  /* sizes */
+  &.sizeLarge {
+    .input {
+      height: var(--form-component-large-height);
+
+      font-size: var(--font-size);
+    }
+  }
+
+  &.sizeMedium {
+    .input {
+      height: var(--form-component-medium-height);
+
+      font-size: var(--font-size-small);
+    }
+  }
+
+  &.sizeSmall {
+    .input {
+      height: var(--form-component-small-height);
+
+      font-size: var(--font-size-small);
+    }
+  }
+
+  &.open {
+    .input {
+      border-color: var(--color-red);
+    }
+  }
+}

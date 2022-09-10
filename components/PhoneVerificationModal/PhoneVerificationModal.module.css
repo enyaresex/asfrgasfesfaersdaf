@@ -1,0 +1,76 @@
+.phoneVerificationModal {
+  .muted {
+    margin: 40px 0 16px 0;
+
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--color-gray);
+    text-align: center;
+  }
+
+  .fieldset {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 0 24px 0;
+
+    .inputs {
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 30px;
+
+      .input {
+        display: block;
+
+        width: 40px;
+        height: 60px;
+
+        margin: 0 5px;
+
+        font-size: 25px;
+        font-weight: 600;
+        color: var(--color-white);
+        text-align: center;
+
+        background-color: var(--color-black2);
+
+        border: 2px solid var(--color-dark-gray2);
+        border-radius: 4px;
+
+        transition: border-color 150ms ease;
+
+        &.withLabel {
+          padding: 10px var(--form-component-horizontal-padding) 0 var(--form-component-horizontal-padding);
+        }
+
+        &:focus {
+          border-color: var(--color-red);
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+
+          background-color: var(--color-dark-gray2);
+        }
+      }
+    }
+
+    .error {
+      margin-bottom: 20px;
+
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-red);
+      text-align: center;
+    }
+  }
+}

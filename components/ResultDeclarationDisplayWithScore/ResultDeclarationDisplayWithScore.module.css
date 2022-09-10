@@ -1,0 +1,92 @@
+.resultDeclarationDisplayWithScore {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+  .user {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    .scoreInput {
+      margin-top: 8px;
+
+      input {
+        max-width: 100px;
+        height: 70px;
+
+        font-size: var(--font-size-headline1);
+        font-weight: 700;
+        color: var(--color-white);
+        text-align: center;
+      }
+    }
+
+    .userDetails {
+      display: grid;
+
+      grid-gap: 8px;
+
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+
+      font-weight: 600;
+    }
+  }
+
+  svg {
+    display: none;
+
+    width: 16px;
+    height: 16px;
+
+    transition: width 150ms ease, height 150ms ease;
+  }
+}
+
+@media (--min-xs) {
+  .resultDeclarationDisplayWithScore {
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 24px;
+
+    .user {
+      justify-content: space-around;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+}
+
+@media (--min-sm) {
+  .resultDeclarationDisplayWithScore {
+    .user {
+      flex-direction: row;
+
+      width: 100%;
+
+      .scoreInput {
+        margin: 0 12px;
+      }
+
+      &.user2 {
+        flex-direction: row-reverse;
+      }
+    }
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

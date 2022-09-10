@@ -1,0 +1,63 @@
+.signUp {
+  max-width: 540px;
+
+  .grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+    grid-column-gap: 10px;
+
+    margin: 16px 0;
+
+    .gridFormGroup {
+      margin: 0;
+    }
+
+    &.gridWide {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .regionDescription {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 10px;
+
+    margin: 16px 0;
+
+    font-size: var(--font-size-small);
+    font-weight: 500;
+
+    color: var(--color-gray);
+
+    svg {
+      display: block;
+
+      flex: 0 0 16px;
+
+      width: 16px;
+      height: 16px;
+
+      margin-top: 4px;
+
+      fill: var(--color-gray);
+    }
+
+    .regionDescriptionContent {
+      flex: 1;
+    }
+  }
+
+  .button {
+    width: 100%;
+
+    margin-top: 20px;
+  }
+
+  .conditions {
+    color: var(--color-gray);
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Popups/Components/Timeline/Current Step/Default</title>
+    <g id="Duel-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.253952753">
+        <g id="Gamer-Arena--Duel-Detail---Progress-Blank-360px" transform="translate(-30.000000, -402.000000)">
+            <g id="Group-4" transform="translate(30.000000, 138.000000)">
+                <g id="5th-Step" transform="translate(0.000000, 260.000000)">
+                    <g id="Popups/Components/Timeline/Current-Step/Default" transform="translate(0.000000, 4.000000)">
+                        <circle fill="#4F515C" cx="12.5" cy="12.5" r="12.5"></circle>
+                        <g id="Icons/More-Dots/Primary" transform="translate(1.000000, 1.000000)">
+                            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                            <g id="Dots" transform="translate(4.000000, 11.000000)" fill="#FFFFFF">
+                                <circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle>
+                                <circle id="Oval" cx="7.5" cy="1.5" r="1.5"></circle>
+                                <circle id="Oval" cx="13.5" cy="1.5" r="1.5"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

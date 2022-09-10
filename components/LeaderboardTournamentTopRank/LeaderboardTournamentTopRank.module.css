@@ -1,0 +1,140 @@
+[dir="rtl"] {
+  .leaderboardTournamentTopRank {
+    .user {
+      .details {
+        margin-right: 10px;
+      }
+
+      .count {
+        svg {
+          margin-left: 6px;
+        }
+      }
+    }
+
+    .reward {
+      margin-right: 20px;
+
+      svg {
+        margin-left: 6px;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .leaderboardTournamentTopRank {
+    .user {
+      .details {
+        margin-left: 10px;
+      }
+
+      .count {
+        svg {
+          margin-right: 6px;
+        }
+      }
+    }
+
+    .reward {
+      margin-left: 20px;
+
+      svg {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.leaderboardTournamentTopRank {
+  display: flex;
+
+  flex: 1;
+
+  justify-content: space-between;
+
+  padding: 16px 10px 24px 10px;
+
+  text-decoration: none;
+
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  transition: padding 150ms ease;
+
+  &[data-focus-visible-added], &:hover {
+    background-color: var(--color-dark-gray2);
+  }
+
+  .user {
+    display: flex;
+
+    .details {
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: space-around;
+
+      font-size: var(--font-size);
+      font-weight: 700;
+      color: var(--color-white);
+
+      .username {
+        max-width: 150px;
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .count {
+      display: grid;
+
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 10px;
+
+      align-items: center;
+      justify-content: flex-start;
+
+      .info {
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        align-items: center;
+      }
+
+      svg {
+        display: inline-block;
+
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .reward {
+    display: flex;
+
+    align-items: center;
+
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--color-white);
+
+    svg {
+      display: block;
+
+      width: auto;
+      height: 16px;
+    }
+  }
+}
+
+@media (--min-xs) {
+  .leaderboardTournamentTopRank {
+    padding: 16px 32px 24px 32px;
+  }
+}

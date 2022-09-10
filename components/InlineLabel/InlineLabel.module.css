@@ -1,0 +1,63 @@
+[dir="rtl"] {
+  .inlineLabel {
+    &.withImage {
+      img {
+        margin-left: 10px;
+
+        &.imageRadius {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .inlineLabel {
+    &.withImage {
+      img {
+        margin-right: 10px;
+
+        &.imageRadius {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.inlineLabel {
+  font-size: var(--font-size);
+  font-weight: 600;
+
+  cursor: pointer;
+
+  &.withImage {
+    display: inline-flex;
+
+    align-items: center;
+
+    img {
+      display: block;
+
+      width: 32px;
+      height: 24px;
+
+      &.imageRadius {
+        height: 32px;
+
+        border-radius: 50%;
+      }
+    }
+  }
+
+  a {
+    font-weight: 700;
+    color: var(--color-red);
+    text-decoration: none;
+
+    &[data-focus-visible-added], &:hover {
+      text-decoration: underline;
+    }
+  }
+}

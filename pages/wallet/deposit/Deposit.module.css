@@ -1,0 +1,49 @@
+.deposit {
+  margin-bottom: 30px;
+
+  .container {
+    .wrapper {
+      display: grid;
+
+      grid-template-columns: 1fr;
+      grid-gap: 24px;
+
+      .col {
+        display: flex;
+
+        flex-direction: column;
+
+        .fieldset {
+          display: flex;
+
+          flex-direction: column;
+
+          > * {
+            align-self: flex-start;
+
+            width: 100%;
+
+            margin-bottom: 30px;
+          }
+
+          .error {
+            font-size: var(--font-size);
+            font-weight: 700;
+
+            color: var(--color-red);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-lg) {
+  .deposit {
+    .container {
+      .wrapper {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+  }
+}

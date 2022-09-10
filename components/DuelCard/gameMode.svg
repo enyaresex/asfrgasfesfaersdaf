@@ -1,0 +1,36 @@
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-4.3%" y="-5.7%" width="108.6%" height="111.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="GA-Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide-2" transform="translate(-574.000000, -2053.000000)">
+            <g id="Cards" transform="translate(0.000000, 1339.000000)">
+                <g id="Cards/Duel-Card/Large/Default/Waiting" transform="translate(468.000000, 539.000000)">
+                    <g id="Cards/Duel-Card/Default/Waiting">
+                        <g filter="url(#filter-1)">
+                            <g id="1v1-Maç" transform="translate(108.000000, 175.000000)">
+                                <g id="Icons/Match-Type/Secondary">
+                                    <g>
+                                        <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+                                        <g id="-4.-Icons-/-Action-/-dashboard">
+                                            <polygon id="Path" points="0 0 20 0 20 20 0 20"></polygon>
+                                            <path d="M3.33333333,10.8333333 L8.33333333,10.8333333 C8.79166667,10.8333333 9.16666667,10.4583333 9.16666667,10 L9.16666667,3.33333333 C9.16666667,2.875 8.79166667,2.5 8.33333333,2.5 L3.33333333,2.5 C2.875,2.5 2.5,2.875 2.5,3.33333333 L2.5,10 C2.5,10.4583333 2.875,10.8333333 3.33333333,10.8333333 Z M3.33333333,17.5 L8.33333333,17.5 C8.79166667,17.5 9.16666667,17.125 9.16666667,16.6666667 L9.16666667,13.3333333 C9.16666667,12.875 8.79166667,12.5 8.33333333,12.5 L3.33333333,12.5 C2.875,12.5 2.5,12.875 2.5,13.3333333 L2.5,16.6666667 C2.5,17.125 2.875,17.5 3.33333333,17.5 Z M11.6666667,17.5 L16.6666667,17.5 C17.125,17.5 17.5,17.125 17.5,16.6666667 L17.5,10 C17.5,9.54166667 17.125,9.16666667 16.6666667,9.16666667 L11.6666667,9.16666667 C11.2083333,9.16666667 10.8333333,9.54166667 10.8333333,10 L10.8333333,16.6666667 C10.8333333,17.125 11.2083333,17.5 11.6666667,17.5 Z M10.8333333,3.33333333 L10.8333333,6.66666667 C10.8333333,7.125 11.2083333,7.5 11.6666667,7.5 L16.6666667,7.5 C17.125,7.5 17.5,7.125 17.5,6.66666667 L17.5,3.33333333 C17.5,2.875 17.125,2.5 16.6666667,2.5 L11.6666667,2.5 C11.2083333,2.5 10.8333333,2.875 10.8333333,3.33333333 Z" id="🔹-Icon-Color" fill="#959AA2"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

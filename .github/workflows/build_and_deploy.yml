@@ -1,0 +1,84 @@
+on:
+  push:
+    branches:
+      - staging
+      - production
+
+env:
+  GAMERARENA_FRONTEND_IMAGE: gamerarena-frontend
+
+jobs:
+  buildAndDeploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Log into registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+
+      - if: github.ref == 'refs/heads/staging'
+        name: Build docker image
+        run: docker build --tag $GAMERARENA_FRONTEND_IMAGE --build-arg "GAMERARENA_STAGE=staging" .
+
+      - if: github.ref == 'refs/heads/production'
+        name: Build docker image
+        run: docker build --tag $GAMERARENA_FRONTEND_IMAGE --build-arg "GAMERARENA_STAGE=production" .
+
+      - name: Push image
+        run: |
+          IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$GAMERARENA_FRONTEND_IMAGE
+
+          # Change all uppercase to lowercase
+          IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
+
+          # Strip git ref prefix from version
+          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+
+          # Strip "v" prefix from tag name
+          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
+
+          # Use Docker `latest` tag convention
+          [ "$VERSION" == "master" ] && VERSION=latest
+
+          echo IMAGE_ID=$IMAGE_ID
+          echo VERSION=$VERSION
+
+          docker tag $GAMERARENA_FRONTEND_IMAGE $IMAGE_ID:$VERSION
+          docker push $IMAGE_ID:$VERSION
+
+      - if: github.ref == 'refs/heads/staging'
+        name: Update rancher staging deployment
+        uses: th0th/rancher-redeploy-workload@v0.9
+        env:
+          RANCHER_BEARER_TOKEN: ${{ secrets.RANCHER_BEARER_TOKEN }}
+          RANCHER_CLUSTER_ID: ${{ secrets.RANCHER_CLUSTER_ID }}
+          RANCHER_NAMESPACE: 'gamerarena-staging-frontend'
+          RANCHER_PROJECT_ID: ${{ secrets.RANCHER_STAGING_PROJECT_ID }}
+          RANCHER_URL: ${{ secrets.RANCHER_URL }}
+          RANCHER_WORKLOADS: 'frontend'
+
+      - if: github.ref == 'refs/heads/production'
+        name: Update rancher production deployment
+        uses: th0th/rancher-redeploy-workload@v0.9
+        env:
+          RANCHER_BEARER_TOKEN: ${{ secrets.RANCHER_BEARER_TOKEN }}
+          RANCHER_CLUSTER_ID: ${{ secrets.RANCHER_CLUSTER_ID }}
+          RANCHER_NAMESPACE: 'gamerarena-production-frontend'
+          RANCHER_PROJECT_ID: ${{ secrets.RANCHER_PRODUCTION_PROJECT_ID }}
+          RANCHER_URL: ${{ secrets.RANCHER_URL }}
+          RANCHER_WORKLOADS: 'frontend'
+
+      - name: Slack notification
+        uses: 8398a7/action-slack@v3
+        if: ${{ always() }}
+        with:
+          author_name: ${{ github.actor }}
+          status: ${{ job.status }}
+          fields: repo,ref,job,message,took,action
+          job_name: Build and deploy
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

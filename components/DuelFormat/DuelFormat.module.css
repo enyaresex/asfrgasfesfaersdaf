@@ -1,0 +1,76 @@
+.duelFormat {
+  .header {
+    display: flex;
+
+    align-items: center;
+
+    height: 48px;
+
+    padding: 0 8px;
+
+    font-size: var(--font-size);
+    font-weight: 700;
+
+    background-color: var(--color-dark-gray);
+    border-radius: 8px 8px 0 0;
+  }
+
+  .content {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+
+    padding: 16px;
+
+    background-color: var(--color-black3);
+    border-radius: 0 0 8px 8px;
+
+    .box {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 20px 0;
+
+      background-color: var(--color-dark-gray);
+      border-radius: 7px;
+
+      .boxWrapper {
+        display: grid;
+
+        grid-template-columns: 25px minmax(50px, 100px);
+        grid-gap: 16px;
+
+        padding: 0 14px;
+
+        .icon {
+          align-self: center;
+          justify-self: center;
+
+          svg {
+            display: block;
+
+            width: 24px;
+            height: 21px;
+          }
+        }
+
+        .info {
+          font-size: var(--font-size-small);
+          font-weight: 600;
+          color: var(--color-white);
+
+          .title {
+            margin-bottom: 6px;
+
+            font-size: var(--font-size-smaller);
+            color: var(--color-gray);
+          }
+        }
+      }
+    }
+  }
+}

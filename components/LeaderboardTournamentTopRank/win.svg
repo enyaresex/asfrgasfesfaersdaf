@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="14px" viewBox="0 0 15 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Shield Approve/Primary </title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.282353 0 0 0 0 0.705882 0 0 0 0 0.454902 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Tournament-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-2-LB-Tournament-Detail-Ongoing-Rankings-360px" transform="translate(-208.000000, -947.000000)">
+            <g id="Chat" transform="translate(8.695652, 803.000000)">
+                <g id="Rank" transform="translate(5.438233, 124.000000)">
+                    <g id="Wins" transform="translate(193.231539, 17.000000)">
+                        <g id="Icons/Shield-Approve/Primary-" transform="translate(0.000000, 2.000000)" filter="url(#filter-1)">
+                            <g>
+                                <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                                <path d="M5.99618254,7.44110742 L7.45456479,8.89948494 L10.3790168,5.97522988 M13.7684899,3.74841978 C14.9694334,4.99004693 11.26404,14 8.04389897,14 C4.82357046,14 0.836363144,5.28123493 2.31912051,3.74841978 C3.04568662,2.99710599 5.52219893,1.97822923 7.99983625,2.00035426 C10.5772241,2.0234168 13.1561119,3.11541869 13.7684899,3.74841978 Z" id="Shield-Approve" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

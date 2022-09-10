@@ -1,0 +1,35 @@
+.duelDisputeModal {
+  .description {
+    .sampleScreenshot {
+      display: block;
+
+      max-width: 100%;
+
+      margin: 20px 0;
+    }
+
+    .rules {
+      margin-left: 1em;
+
+      font-weight: 700;
+
+      color: var(--color-red);
+
+      li {
+        &:not(:first-child) {
+          margin-top: 10px;
+        }
+
+        .rule {
+          font-weight: 600;
+
+          color: var(--color-gray);
+        }
+      }
+    }
+
+    .continueButton {
+      margin-top: 20px;
+    }
+  }
+}

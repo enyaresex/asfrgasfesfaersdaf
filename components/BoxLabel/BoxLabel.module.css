@@ -1,0 +1,54 @@
+[dir="rtl"] {
+  .boxLabel {
+    right: var(--form-component-horizontal-padding);
+
+    margin-right: 2px;
+  }
+}
+
+[dir="ltr"] {
+  .boxLabel {
+    left: var(--form-component-horizontal-padding);
+
+    margin-left: 2px;
+  }
+}
+
+.boxLabel {
+  position: absolute;
+
+  top: 50%;
+
+  font-size: var(--font-size-small);
+  font-weight: 600;
+
+  color: var(--color-gray);
+
+  pointer-events: none;
+
+  transition: top 150ms ease, transform 150ms ease, font-size 150ms ease;
+
+  transform: translateY(-50%);
+
+  /* sizes */
+  &.sizeLarge {
+    font-size: var(--font-size);
+  }
+
+  &.sizeMedium {
+    font-size: var(--font-size-small);
+  }
+
+  &.sizeSmall {
+    font-size: var(--font-size-small);
+  }
+
+  &.onTop {
+    top: 5px;
+
+    font-size: var(--font-size-tiny);
+    font-weight: 700;
+
+    transform: translateY(0);
+  }
+}

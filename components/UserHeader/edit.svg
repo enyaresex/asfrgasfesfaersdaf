@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Iconly/Light/Edit</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.584314 0 0 0 0 0.603922 0 0 0 0 0.635294 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Profile-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Gamer-Arena-My-Profile-1-1-360px" transform="translate(-290.000000, -18.000000)">
+            <g id="Group-2" transform="translate(235.000000, 14.000000)">
+                <g id="Iconly/Light/Edit" transform="translate(52.000000, 0.500000)" filter="url(#filter-1)">
+                    <g id="Edit" transform="translate(3.500000, 3.500000)" stroke="#200E32" stroke-width="1.5">
+                        <line x1="10.1996" y1="16.3981" x2="16.5766" y2="16.3981" id="Stroke-1"></line>
+                        <path d="M9.3549,1.4557 C10.0919,0.5167 11.2829,0.5657 12.2229,1.3027 L13.6129,2.3927 C14.5529,3.1297 14.8859,4.2727 14.1489,5.2137 L5.8599,15.7887 C5.5829,16.1427 5.1599,16.3517 4.7099,16.3567 L1.5129,16.3977 L0.7889,13.2827 C0.6869,12.8457 0.7889,12.3857 1.0659,12.0307 L9.3549,1.4557 Z" id="Stroke-3"></path>
+                        <line x1="7.8026" y1="3.4361" x2="12.5966" y2="7.1941" id="Stroke-5"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

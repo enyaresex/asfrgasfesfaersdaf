@@ -1,0 +1,54 @@
+[dir="rtl"] {
+  .settingsSectionTitle {
+    .goBack {
+      margin-left: 16px;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .settingsSectionTitle {
+    .goBack {
+      margin-right: 16px;
+
+      svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
+.settingsSectionTitle {
+  display: flex;
+
+  align-items: center;
+
+  padding-bottom: 15px;
+
+  font-weight: bold;
+
+  border-bottom: 1px solid var(--color-white2);
+
+  .goBack {
+    padding: 10px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    svg {
+      display: block;
+
+      width: 24px;
+      height: 24px;
+    }
+
+    &[data-focus-visible-added], &:hover {
+      background-color: var(--color-dark-gray2);
+    }
+  }
+}

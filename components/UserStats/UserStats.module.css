@@ -1,0 +1,86 @@
+[dir="rtl"]{
+  .userStats {
+    .body {
+      padding: 26px 24px 26px 15px;
+
+      .stat {
+        .statValue {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"]{
+  .userStats {
+    .body {
+      padding: 26px 15px 26px 24px;
+
+      .stat {
+        .statValue {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.userStats {
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  .header {
+    display: grid;
+
+    grid-template-columns: 1fr 30%;
+    grid-gap: 10px;
+
+    align-items: center;
+
+    padding: 10px 15px;
+
+    background-color: var(--color-dark-gray);
+    border-radius: 8px 8px 0 0;
+
+    .title {
+      font-weight: 700;
+      color: var(--color-white);
+    }
+  }
+
+  .body {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-gap: 22px;
+
+    .stat {
+      display: grid;
+
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 18px;
+
+      align-items: center;
+
+      svg {
+        display: block;
+
+        width: 30px;
+        height: 30px;
+      }
+
+      .statName {
+        font-size: var(--font-size);
+        font-weight: 600;
+        color: var(--color-gray);
+      }
+
+      .statValue {
+        font-size: var(--font-size-headline3);
+        font-weight: 600;
+        color: var(--color-white);
+      }
+    }
+  }
+}

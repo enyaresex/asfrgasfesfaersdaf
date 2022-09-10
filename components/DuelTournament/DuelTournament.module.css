@@ -1,0 +1,120 @@
+[dir="rtl"]{
+  .duelTournament {
+    .wrapper {
+      .info {
+        .game {
+          .icon {
+            left: 16%;
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"]{
+  .duelTournament {
+    .wrapper {
+      .info {
+        .game {
+          .icon {
+            right: 16%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.duelTournament {
+  .wrapper {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+    .info {
+      display: grid;
+
+      grid-template-columns: 36px 1fr;
+
+      gap: 16px;
+
+      align-items: center;
+
+      .game {
+        position: relative;
+
+        img {
+          display: block;
+
+          width: 36px;
+          height: 36px;
+
+          border-radius: 50%;
+        }
+
+        .icon {
+          position: absolute;
+          bottom: 16%;
+
+          display: flex;
+
+          align-items: center;
+          justify-content: center;
+
+          width: 20px;
+          height: 20px;
+
+          background-color: var(--color-red);
+          border-radius: 50%;
+
+          transform: translate(50%, 50%);
+
+          svg {
+            display: block;
+
+            width: 12px;
+            height: 13px;
+          }
+        }
+      }
+
+      .details {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-white);
+
+        .muted {
+          margin-bottom: 4px;
+
+          font-size: 12px;
+          line-height: 1;
+          color: var(--color-gray);
+        }
+      }
+    }
+
+    .link {
+      justify-self: center;
+    }
+  }
+}
+
+@media (--min-sm) {
+  .duelTournament {
+    .wrapper {
+      flex-direction: row;
+
+      flex-wrap: wrap;
+
+      align-items: center;
+      justify-content: space-between;
+
+      .info {
+        flex: 1;
+      }
+    }
+  }
+}

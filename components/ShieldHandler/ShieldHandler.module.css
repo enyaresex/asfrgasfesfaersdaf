@@ -1,0 +1,38 @@
+.shieldHandler {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  max-width: 800px;
+  min-height: 100vh;
+
+  padding: 30px;
+  margin: auto;
+
+  text-align: center;
+
+  .visual {
+    svg {
+      display: block;
+
+      height: 200px;
+    }
+  }
+
+  .description {
+    margin-top: 40px;
+
+    font-size: var(--font-size-bigger);
+    font-weight: 700;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 1em;
+      }
+    }
+  }
+}

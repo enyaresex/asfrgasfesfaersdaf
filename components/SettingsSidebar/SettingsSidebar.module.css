@@ -1,0 +1,36 @@
+[dir="rtl"] {
+  .settingsSidebar {
+    .wrapper {
+      .title {
+        padding-right: 28px;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .settingsSidebar {
+    .wrapper {
+      .title {
+        padding-left: 28px;
+      }
+    }
+  }
+}
+
+.settingsSidebar {
+  display: grid;
+
+  grid-gap: 40px;
+
+  .wrapper {
+    display: grid;
+
+    grid-gap: 16px;
+
+    .title {
+      font-size: var(--color-white);
+      font-weight: 700;
+    }
+  }
+}

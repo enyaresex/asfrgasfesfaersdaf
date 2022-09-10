@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="6px" viewBox="0 0 11 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Arrows/Up/Secondary</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Online-User-Menu/Expanded/Filtered" transform="translate(-198.000000, -112.000000)" fill="#6C6C6C">
+            <g id="Filter-By" transform="translate(40.000000, 111.000000)">
+                <g id="Icons/Arrows/Up/Secondary" transform="translate(158.000000, 1.000000)">
+                    <path d="M9.0909396,0.266514806 L5.44530201,3.80182232 L1.79966443,0.266514806 C1.43322148,-0.0888382688 0.841275168,-0.0888382688 0.474832215,0.266514806 C0.108389262,0.621867882 0.108389262,1.19589977 0.474832215,1.55125285 L4.78758389,5.73348519 C5.15402685,6.08883827 5.74597315,6.08883827 6.11241611,5.73348519 L10.4251678,1.55125285 C10.7916107,1.19589977 10.7916107,0.621867882 10.4251678,0.266514806 C10.0587248,-0.0797266515 9.45738255,-0.0888382688 9.0909396,0.266514806 L9.0909396,0.266514806 Z" id="🔹-Icon-Color" transform="translate(5.450000, 3.000000) scale(1, -1) translate(-5.450000, -3.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

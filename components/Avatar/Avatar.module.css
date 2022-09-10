@@ -1,0 +1,252 @@
+[dir="rtl"] {
+  .avatar {
+    .duelCount {
+      left: 16%;
+
+      transform: translate(-50%, 50%);
+    }
+
+    .banned {
+      left: 16%;
+
+      transform: translate(-50%, 50%);
+
+      &.withRank {
+        left: 16%;
+      }
+    }
+
+    .blocked {
+      left: 16%;
+
+      transform: translate(-50%, 50%);
+    }
+
+    .onlineIndicator {
+      left: 16%;
+
+      transform: translate(-50%, 50%);
+    }
+  }
+}
+
+[dir="ltr"] {
+  .avatar {
+    .duelCount {
+      right: 16%;
+
+      transform: translate(50%, 50%);
+    }
+
+    .banned {
+      right: 16%;
+
+      transform: translate(50%, 50%);
+
+      &.withRank {
+        left: 16%;
+      }
+    }
+
+    .blocked {
+      right: 16%;
+
+      transform: translate(50%, 50%);
+    }
+
+    .onlineIndicator {
+      right: 16%;
+
+      transform: translate(50%, 50%);
+    }
+  }
+}
+
+.avatar {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  flex-direction: column;
+
+  .duelCount {
+    position: absolute;
+    z-index: 2;
+    bottom: 16%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    min-width: 30px;
+    min-height: 30px;
+
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    text-align: center;
+
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+
+    border: solid 1px var(--color-red);
+    border-radius: 50%;
+
+    .muted {
+      font-weight: 300;
+    }
+  }
+
+  .flag {
+    position: absolute;
+    bottom: -4px;
+
+    display: block;
+
+    width: 24px;
+    height: 16px;
+  }
+
+  .banned {
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: 16%;
+
+    display: block;
+
+    width: 30%;
+    height: 30%;
+
+    &.withRank {
+      top: -10%;
+      bottom: auto;
+    }
+  }
+
+  .blocked {
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: 16%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .rank {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+
+    background-color: var(--color-black);
+    color: var(--color-white2);
+
+    border: solid 1px transparent;
+    border-radius: 10px;
+
+    &.rankBorderBronze {
+      border-color: var(--color-bronze);
+    }
+
+    &.rankBorderGold {
+      border-color: var(--color-gold);
+    }
+
+    &.rankBorderRed {
+      border-color: var(--color-red);
+    }
+
+    &.rankBorderSilver {
+      border-color: var(--color-silver);
+    }
+  }
+
+  .onlineIndicator {
+    position: absolute;
+    z-index: 2;
+    bottom: 16%;
+
+    background-color: var(--color-green);
+
+    border-radius: 50%;
+  }
+
+  &.banned {
+    .image {
+      opacity: 0.5;
+    }
+  }
+
+  &.withFlag {
+    margin-bottom: 8px;
+  }
+
+  .image {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 50%;
+
+    &.canceled, &.declined {
+      border: 1px solid var(--color-red);
+    }
+
+    &.ended, &.expired {
+      border: 1px solid var(--color-gray);
+    }
+
+    &.in_progress {
+      border: 1px solid var(--color-orange);
+    }
+
+    &.open, &.invited {
+      border: 1px solid var(--color-green);
+    }
+
+    &.checking_in, &.declaring_result {
+      border: 1px solid var(--color-yellow);
+    }
+
+    &.borderRed {
+      border: 1px solid var(--color-red);
+    }
+
+    &.borderGray {
+      border: 1px solid var(--color-gray);
+    }
+
+    &.borderOrange {
+      border: 1px solid var(--color-orange);
+    }
+
+    &.borderGreen {
+      border: 1px solid var(--color-green);
+    }
+
+    &.borderYellow {
+      border: 1px solid var(--color-yellow);
+    }
+  }
+}

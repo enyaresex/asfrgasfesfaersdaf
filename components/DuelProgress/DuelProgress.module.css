@@ -1,0 +1,334 @@
+[dir="rtl"] {
+  .duelProgress {
+    .header {
+      text-align: right;
+    }
+
+    .content {
+      .wrapper {
+        .line {
+          &:before {
+            right: 12px;
+          }
+        }
+      }
+    }
+
+    .step {
+      &.current {
+        &:after {
+          right: -28px;
+
+          background-position: left;
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .duelProgress {
+    .header {
+      text-align: left;
+    }
+
+    .content {
+      .wrapper {
+        .line {
+          &:before {
+            left: 12px;
+          }
+        }
+      }
+    }
+
+    .step {
+      &.current {
+        &:after {
+          left: -28px;
+
+          background-position: right;
+        }
+      }
+    }
+  }
+}
+
+.duelProgress {
+  position: relative;
+
+  min-width: 100%;
+  height: min-content;
+
+  .header {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 14px 32px;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-white);
+
+    cursor: pointer;
+
+    background-color: var(--color-black3);
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.33), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+    transition: background-color 100ms ease;
+
+    &[data-focus-visible-added], &:hover {
+      background-color: var(--color-black2);
+    }
+  }
+
+  .content {
+    display: grid;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 30px;
+
+    margin-top: 2px;
+
+    background-color: var(--color-black3);
+
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.33);
+
+    .wrapper {
+      display: grid;
+
+      grid-gap: 5px;
+
+      max-width: 350px;
+
+      .line {
+        position: relative;
+
+        height: 30px;
+
+        opacity: 0.3;
+
+        &:before {
+          position: absolute;
+          top: 0;
+
+          width: 1px;
+          height: 100%;
+
+          content: '';
+
+          background-color: var(--color-gray);
+        }
+      }
+    }
+  }
+
+  .step {
+    position: relative;
+
+    display: grid;
+
+    flex: 1;
+
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    color: var(--color-gray);
+
+    transition: opacity 100ms ease;
+
+    .detail {
+      display: grid;
+
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 12px;
+
+      align-items: center;
+
+      font-weight: 600;
+      color: var(--color-white);
+
+      svg {
+        display: block;
+
+        width: 25px;
+        min-width: 25px;
+        height: 25px;
+        min-height: 25px;
+      }
+    }
+
+    &.muted {
+      opacity: 0.3;
+    }
+
+    &.ended {
+      margin-top: 24px;
+    }
+
+    &.current {
+      &:after {
+        position: absolute;
+
+        width: 12px;
+        height: 12px;
+
+        content: '';
+
+        background-image: url('current.svg');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .toggle {
+    position: absolute;
+    right: 0;
+    bottom: -24px;
+    left: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 56px;
+    height: 24px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    background-color: var(--color-black3);
+    border-radius: 0 0 12px 12px;
+
+    &[data-focus-visible-added], &:hover {
+      background-color: var(--color-black2);
+    }
+
+    svg {
+      display: block;
+
+      width: 12px;
+      height: 12px;
+
+      transition: transform 100ms ease;
+
+      transform: rotate(270deg);
+    }
+
+    &.collapsed {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+@media (--min-lg) {
+  [dir="rtl"] {
+    .duelProgress {
+      .header {
+        svg {
+          margin-right: 30px;
+        }
+
+        &.opened {
+          svg {
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+
+  [dir="ltr"] {
+    .duelProgress {
+      .header {
+        svg {
+          margin-left: 30px;
+        }
+
+        &.opened {
+          svg {
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+
+  .duelProgress {
+    .header {
+      padding: 14px 16px;
+
+      font-size: var(--font-size);
+      font-weight: 700;
+
+      background-color: var(--color-dark-gray);
+
+      border-radius: 8px;
+
+      box-shadow: none;
+
+      transition: background-color 100ms ease;
+
+      svg {
+        width: 17px;
+        height: 17px;
+
+        fill: var(--color-gray);
+
+        transition: transform 150ms ease;
+
+        transform: rotate(0);
+      }
+
+      &[data-focus-visible-added], &:hover, &:active {
+        background-color: var(--color-dark-gray2);
+      }
+
+      &.opened {
+        border-radius: 8px 8px 0 0;
+
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    .content {
+      box-shadow: none;
+    }
+
+    .step {
+      &.current {
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+    .toggle {
+      display: none;
+    }
+  }
+}

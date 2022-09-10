@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.584314 0 0 0 0 0.603922 0 0 0 0 0.635294 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Profile-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="export" transform="translate(-711.000000, -292.000000)" filter="url(#filter-1)">
+            <g transform="translate(711.000000, 292.000000)">
+                <path d="M12.9687445,6 L11.2771848,6 L11.2771848,7.09092061 L12.4049131,7.09092061 L12.4049131,16.9091111 L1.1277283,16.9091111 L1.1277283,7.09092061 L2.25545661,7.09092061 L2.25545661,6 L0.563864152,6 C0.252188676,6 0,6.24395754 0,6.5454603 L0,17.4545397 C0,17.7560425 0.252188676,18 0.563864152,18 L12.9687445,18 C13.28042,18 13.5326087,17.7560425 13.5326087,17.4545397 L13.5326087,6.5454603 C13.5326087,6.24395754 13.28042,6 12.9687445,6 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                <polygon id="Path" fill="#000000" fill-rule="nonzero" points="6.20583328 2.07356271 6.20583328 9.75 7.32677542 9.75 7.32677542 2.07356271 9.73283416 4.3989181 10.5253623 3.6329727 6.76630435 0 3.00724638 3.6329727 3.79977454 4.3989181"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

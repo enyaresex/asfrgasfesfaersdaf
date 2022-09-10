@@ -1,0 +1,122 @@
+[dir="rtl"] {
+  .duelCardList {
+    .header {
+      .viewAll {
+        margin-right: 50px;
+
+        text-align: left;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .duelCardList {
+    .header {
+      .viewAll {
+        margin-left: 50px;
+
+        text-align: right;
+      }
+    }
+  }
+}
+
+.duelCardList {
+  &.display-2 {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showMoreButtonWrapper {
+      grid-template-columns: repeat(3, 1fr);
+
+      .submit {
+        grid-column: 1 span / -2;
+      }
+    }
+  }
+
+  &.display-3 {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .showMoreButtonWrapper {
+      grid-template-columns: repeat(3, 1fr);
+
+      .submit {
+        grid-column: 1 span / -2;
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    .duelCount {
+      font-weight: 500;
+
+      color: var(--color-gray);
+    }
+
+    .viewAll {
+      font-size: var(--font-size-small);
+      font-weight: 500;
+      text-decoration: none;
+
+      color: var(--color-gray);
+
+      &[data-focus-visible-added],
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .cards {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+
+  .showMoreButtonWrapper {
+    display: grid;
+
+    margin-top: 36px;
+
+    .submit {
+      grid-column: 1 span;
+    }
+  }
+}
+
+@media (--min-sm) {
+  .duelCardList {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showMoreButtonWrapper {
+      grid-template-columns: repeat(3, 1fr);
+
+      .submit {
+        grid-column: 1 span / -2;
+      }
+    }
+  }
+}
+
+@media (--min-xl) {
+  .duelCardList {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

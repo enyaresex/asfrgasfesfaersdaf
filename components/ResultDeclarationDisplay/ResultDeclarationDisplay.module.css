@@ -1,0 +1,37 @@
+.resultDeclarationDisplay {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-gap: 16px;
+
+  align-items: center;
+
+  svg {
+    display: none;
+
+    width: 16px;
+    height: 16px;
+
+    transition: width 150ms ease, height 150ms ease;
+  }
+}
+
+@media (--min-xs) {
+  .resultDeclarationDisplay {
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 24px;
+
+    svg {
+      display: block;
+    }
+  }
+}
+
+@media (--min-sm) {
+  .resultDeclarationDisplay {
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

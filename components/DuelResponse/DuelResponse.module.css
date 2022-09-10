@@ -1,0 +1,58 @@
+.duelResponse {
+  .wrapper {
+    padding: 24px 32px;
+
+    background-color: var(--color-black3);
+    border-radius: 8px;
+
+    .inviteMessage {
+      display: grid;
+
+      grid-template-columns: auto auto;
+      grid-gap: 10px;
+
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+
+      font-size: var(--font-size);
+      font-weight: 600;
+
+      .user {
+        font-weight: 700;
+      }
+    }
+
+    .form {
+      max-width: 550px;
+
+      margin: 0 auto;
+
+      .fieldset {
+        min-width: 0;
+      }
+    }
+
+    .buttons {
+      display: grid;
+
+      grid-template-columns: repeat(2, minmax(45%, 1fr));
+      grid-gap: 18px;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (--min-md) {
+  .duelResponse {
+    .wrapper {
+      .buttons {
+        grid-template-columns: repeat(2, minmax(0px, 250px));
+      }
+    }
+  }
+}

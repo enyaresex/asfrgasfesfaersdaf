@@ -1,0 +1,153 @@
+[dir="rtl"] {
+  .faq {
+    .section {
+      .question {
+        .title {
+          text-align: right;
+
+          svg {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .faq {
+    .section {
+      .question {
+        .title {
+          text-align: left;
+
+          svg {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.faq {
+  .section {
+    padding: var(--section-vertical-padding);
+
+    .header {
+      margin-bottom: 40px;
+
+      text-align: center;
+
+      .title {
+        margin-bottom: 16px;
+      }
+
+      .subTitle {
+        max-width: 75%;
+        margin: 0 auto;
+
+        font-weight: 600;
+
+        color: var(--color-gray);
+
+        a {
+          color: var(--color-red);
+          text-decoration: none;
+
+          &[data-focus-visible-added], &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .question {
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+
+      .title {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+
+        padding: 30px 24px;
+
+        font-size: var(--font-size-big);
+        font-weight: 600;
+
+        color: var(--color-white);
+
+        cursor: pointer;
+
+        background-color: var(--color-black3);
+
+        border-radius: 8px;
+
+        &[data-focus-visible-added],
+        &:hover {
+          background-color: var(--color-dark-gray);
+        }
+
+        &:active {
+          background-color: var(--color-dark-gray2);
+        }
+
+        svg {
+          width: 36px;
+          height: 36px;
+
+          fill: var(--color-red);
+
+          transition: transform 150ms ease;
+        }
+      }
+
+      .content {
+        padding: 20px 24px;
+        margin-top: 2px;
+
+        font-weight: 500;
+
+        color: var(--color-gray);
+
+        background-color: var(--color-black3);
+
+        border-radius: 0 0 8px 8px;
+
+        .youtubeVideo {
+          &:not(:first-child) {
+            margin-top: 20px;
+          }
+        }
+      }
+
+      &.active {
+        .title {
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+
+          svg {
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-md) {
+  .faq {
+    .section {
+      .header {
+        .title {
+          font-size: var(--font-size-headline1);
+        }
+      }
+    }
+  }
+}

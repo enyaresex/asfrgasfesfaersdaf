@@ -1,0 +1,89 @@
+[dir="rtl"] {
+  .ladderTournamentRank {
+    .reward {
+      svg {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .ladderTournamentRank {
+    .reward {
+      svg {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.ladderTournamentRank {
+  &.me {
+    .user {
+      a {
+        color: var(--color-red);
+      }
+    }
+
+    .rankCount {
+      color: var(--color-red);
+    }
+  }
+
+  .trophies {
+    svg {
+      display: block;
+
+      width: auto;
+      height: 24px;
+
+      margin: 0 auto;
+    }
+  }
+
+  .user {
+    a {
+      color: var(--color-gray);
+      text-decoration: none;
+
+      transition: color 100ms ease;
+
+      &[data-focus-visible-added], &:hover {
+        color: var(--color-white);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .count {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-white);
+  }
+
+  .rankCount {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-gray);
+  }
+
+  .reward {
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--color-white);
+
+    vertical-align: middle;
+
+    .empty {
+      text-align: center;
+    }
+
+    svg {
+      display: inline-block;
+
+      width: auto;
+      height: 16px;
+    }
+  }
+}

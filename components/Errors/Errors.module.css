@@ -1,0 +1,35 @@
+[dir="rtl"] {
+  .errors {
+    &.textAlignLeft {
+      .error {
+        text-align: right;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .errors {
+    &.textAlignLeft {
+      .error {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.errors {
+  &.textAlignCenter {
+    .error {
+      text-align: center;
+    }
+  }
+
+  .error {
+    padding: 4px 0;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-red);
+  }
+}

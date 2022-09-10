@@ -1,0 +1,238 @@
+[dir="rtl"] {
+  .leaderboardTournamentHeader {
+    .header {
+      .headerBody {
+        .container {
+          .game {
+            .info {
+              .name {
+                margin: 4px 6px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .leaderboardTournamentHeader {
+    .header {
+      .headerBody {
+        .container {
+          .game {
+            .info {
+              .name {
+                margin: 4px 0 0 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.leaderboardTournamentHeader {
+  margin-bottom: 64px;
+
+  transition: margin-bottom var(--transition-duration) ease;
+
+  .header {
+    display: flex;
+
+    min-height: 200px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .headerBody {
+      display: flex;
+
+      justify-content: space-between;
+
+      flex-direction: column;
+
+      min-width: 100%;
+
+      background-image: linear-gradient(to bottom, rgba(17, 18, 23, 0.2), var(--color-black) 100%);
+
+      .share {
+        display: flex;
+
+        justify-content: flex-end;
+
+        padding: 15px;
+      }
+
+      .container {
+        margin-bottom: -64px;
+
+        transition: margin-bottom var(--transition-duration) ease;
+
+        .game {
+          display: flex;
+
+          justify-content: flex-start;
+
+          gap: 16px;
+
+          img {
+            display: block;
+
+            width: 90px;
+            height: 90px;
+
+            border-radius: 12px;
+          }
+
+          .info {
+            display: flex;
+
+            justify-content: space-between;
+
+            flex-direction: column;
+
+            .name {
+              display: flex;
+
+              flex: 1;
+
+              max-width: 50vw;
+
+              overflow: hidden;
+
+              text-overflow: ellipsis;
+              overflow-wrap: break-word;
+
+              transition: max-width 150ms ease;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+
+        .countdownWrapper {
+          display: flex;
+
+          align-items: center;
+          justify-content: flex-start;
+
+          margin-top: 30px;
+
+          .countdown {
+            display: grid;
+
+            align-items: center;
+
+            grid-template-columns: repeat(7, auto);
+            grid-gap: 8px;
+
+            color: var(--color-gray);
+
+            span {
+              display: flex;
+
+              align-items: center;
+              justify-content: center;
+
+              width: 48px;
+              height: 52px;
+
+              font-size: var(--font-size-headline4);
+              font-weight: 600;
+              text-align: center;
+
+              color: var(--color-white);
+
+              border: solid 1px var(--color-gray);
+              border-radius: 8px;
+
+              transition: padding 150ms ease, width 150ms ease, height 150ms ease, font-size 150ms ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-xs) {
+  .leaderboardTournamentHeader {
+    .header {
+      .headerBody {
+        .container {
+          .countdownWrapper {
+            .countdown {
+              span {
+                width: 64px;
+                height: 52px;
+
+                font-size: var(--font-size-headline2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-md) {
+  [dir="rtl"] {
+    .leaderboardTournamentHeader {
+      .header {
+        .headerBody {
+          .container {
+            .game {
+              margin-left: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  [dir="ltr"] {
+    .leaderboardTournamentHeader {
+      .header {
+        .headerBody {
+          .container {
+            .game {
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .leaderboardTournamentHeader {
+    margin-bottom: 24px;
+
+    .header {
+      .headerBody {
+        .container {
+          justify-content: space-between;
+          flex-direction: row;
+
+          margin-bottom: -24px;
+
+          .game {
+            .info {
+              .name {
+                max-width: 30vw;
+              }
+            }
+          }
+
+          .countdownWrapper {
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}

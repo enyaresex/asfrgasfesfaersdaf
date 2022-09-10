@@ -1,0 +1,9 @@
+.duelHeader {
+  .title {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 8px;
+  }
+}

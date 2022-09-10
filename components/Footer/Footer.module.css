@@ -1,0 +1,153 @@
+.footer {
+  padding: 30px 0 90px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  .container {
+    flex-direction: column-reverse;
+
+    gap: 32px;
+
+    .column {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 24px;
+
+      align-items: center;
+
+      font-size: var(--font-size-tiny);
+      color: var(--color-white2);
+
+      text-align: center;
+
+      .logo {
+        display: block;
+
+        width: auto;
+        height: 16px;
+      }
+
+      .copyright {
+        font-weight: 600;
+      }
+
+      .navigation {
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        align-items: center;
+
+        justify-content: center;
+
+        a {
+          min-width: calc(33% - 15px);
+
+          font-weight: 500;
+          color: var(--color-white2);
+
+          text-decoration: none;
+
+          &[data-focus-visible-added], &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .social {
+        display: flex;
+
+        flex-direction: row;
+
+        gap: 12px;
+
+        align-items: center;
+
+        width: 100%;
+
+        .socialLink {
+          svg {
+            display: block;
+
+            width: auto;
+            height: 24px;
+
+            fill: var(--color-white2);
+
+            transition: all 150ms ease;
+
+            circle {
+              fill: var(--color-white2);
+
+              transition: all 150ms ease;
+            }
+          }
+
+          &[data-focus-visible-added], &:hover {
+            svg {
+              fill: var(--color-white);
+
+              circle {
+                fill: var(--color-white);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-md) {
+  [dir="rtl"] {
+    .footer {
+      .container {
+        .column {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  [dir="ltr"] {
+    .footer {
+      .container {
+        .column {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 30px 0;
+
+    .container {
+      flex-direction: row;
+
+      gap: 48px;
+
+      .column {
+        align-items: flex-start;
+
+        width: 33%;
+
+        text-align: right;
+
+        .navigation {
+          justify-content: flex-start;
+        }
+
+        .social {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}

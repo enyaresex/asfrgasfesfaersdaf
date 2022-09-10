@@ -1,0 +1,98 @@
+.icrypexVerifier {
+  display: grid;
+
+  grid-gap: 20px;
+
+  .header {
+    display: grid;
+
+    grid-gap: 8px;
+
+    .title {
+      font-weight: 700;
+    }
+
+    .muted {
+      font-size: var(--font-size);
+      font-weight: 600;
+      color: var(--color-gray);
+    }
+  }
+
+  .radio {
+    margin-bottom: 16px;
+
+    .content {
+      display: flex;
+
+      align-items: center;
+      justify-content: flex-start;
+
+      .info {
+        display: flex;
+
+        flex: 1;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        font-size: var(--font-size);
+        font-weight: 700;
+        color: var(--color-white);
+
+        .muted {
+          font-size: var(--font-size-small);
+          font-weight: 600;
+          color: var(--color-gray);
+        }
+      }
+
+      svg {
+        display: block;
+
+        width: auto;
+        height: 40px;
+
+        &.paypal {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .disclaimer {
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+    grid-gap: 8px;
+
+    align-items: center;
+
+    margin-top: 8px;
+
+    svg {
+      display: block;
+
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .terms {
+    margin-top: 16px;
+
+    .formGroup {
+      margin: 0;
+
+      .conditions {
+        .label {
+          font-size: var(--font-size-small);
+          font-weight: 600;
+          line-height: 1.5;
+          color: var(--color-gray);
+        }
+      }
+    }
+  }
+}

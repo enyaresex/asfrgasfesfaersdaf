@@ -1,0 +1,153 @@
+[dir="rtl"] {
+  .withdrawPaymentMethod {
+    .body {
+      .content {
+        svg {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .withdrawPaymentMethod {
+    .body {
+      .content {
+        svg {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.withdrawPaymentMethod {
+  display: grid;
+  grid-gap: 16px;
+
+  .header {
+    font-weight: 700;
+
+    color: var(--color-white);
+
+    transition: padding 150ms ease;
+  }
+
+  .body {
+    display: grid;
+
+    align-items: flex-start;
+
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+
+    padding: 24px 10px;
+
+    font-size: var(--font-size-smaller);
+    font-weight: 500;
+
+    background-color: var(--color-black3);
+
+    color: var(--color-gray);
+
+    border-radius: 8px;
+
+    transition: padding 150ms ease;
+
+    .radio {
+      &.paypal {
+        svg {
+          display: block;
+
+          width: auto;
+          height: 32px;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+
+      align-items: center;
+
+      svg {
+        display: inline-block;
+
+        width: auto;
+        height: 40px;
+      }
+
+      .info {
+        display: flex;
+
+        justify-content: space-between;
+
+        flex: 1;
+
+        flex-direction: column;
+
+        font-size: var(--font-size);
+        font-weight: 700;
+
+        color: var(--color-white);
+
+        .muted {
+          font-size: var(--font-size-small);
+          font-weight: 600;
+
+          color: var(--color-gray);
+        }
+      }
+    }
+
+    img {
+      display: block;
+
+      width: auto;
+      height: 40px;
+    }
+
+    .disclaimer {
+      display: grid;
+
+      align-items: center;
+
+      grid-template-columns: auto 1fr;
+      grid-gap: 8px;
+
+      margin-top: 8px;
+
+      svg {
+        display: block;
+
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .error {
+      margin-top: 8px;
+
+      color: var(--color-red);
+    }
+
+    &.singleWidthdrawMethodBody {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (--min-sm) {
+  .withdrawPaymentMethod {
+    .body {
+      grid-template-columns: 1fr 1fr;
+
+      padding: 24px 32px;
+
+      label {
+        height: auto;
+      }
+    }
+  }
+}

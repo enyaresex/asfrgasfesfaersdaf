@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 5</title>
+<defs>
+    <filter id="filter-1">
+        <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+    </filter>
+</defs>
+<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Gamer-Arena-Settings-Social-Account-360px--3-2" transform="translate(-32.000000, -506.000000)">
+        <g id="Group-4-Copy" transform="translate(16.000000, 490.000000)">
+            <rect id="Rectangle" fill="none" x="0" y="0" width="328" height="96" rx="8"></rect>
+            <g id="Group-5" transform="translate(16.000000, 16.000000)">
+                <g id="discord">
+                    <circle id="Oval" fill="#673AB7" fill-rule="nonzero" cx="32" cy="32" r="32"></circle>
+                    <g filter="url(#filter-1)" id="twitch">
+                        <g transform="translate(15.000000, 14.000000)">
+                            <path d="M0,6.1559949 L0,30.7711276 L8.49815225,30.7711276 L8.49815225,35.3877551 L13.1382114,35.3877551 L17.7708795,30.7696531 L24.7257945,30.7696531 L34,21.5422959 L34,0 L2.31633407,0 L0,6.1559949 Z M5.40724316,3.07431122 L30.9090909,3.07431122 L30.9090909,19.9999796 L25.4988914,25.3848163 L16.9977827,25.3848163 L12.3651146,29.9955459 L12.3651146,25.3848163 L5.40724316,25.3848163 L5.40724316,3.07431122 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                            <polygon id="Path" fill="#000000" fill-rule="nonzero" points="13.877551 9.02040816 16.6530612 9.02040816 16.6530612 18.0408163 13.877551 18.0408163"></polygon>
+                            <polygon id="Path" fill="#000000" fill-rule="nonzero" points="22.2040816 9.02040816 24.9795918 9.02040816 24.9795918 18.0408163 22.2040816 18.0408163"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="check" transform="translate(44.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M10,0 C4.48577883,0 0,4.48577883 0,10 C0,15.5142212 4.48577883,20 10,20 C15.5142212,20 20,15.5142212 20,10 C20,4.48577883 15.5142212,0 10,0 Z" id="Path" fill="#2196F3"></path>
+                    <path d="M15.5268212,7.79572737 L9.70393261,13.4300942 C9.52924104,13.5991347 9.29992761,13.6842105 9.07061413,13.6842105 C8.84130066,13.6842105 8.61198723,13.5991347 8.43729566,13.4300942 L5.5259334,10.6129108 C5.17556606,10.2740361 5.17556606,9.72612256 5.5259334,9.38724792 C5.87613667,9.04821452 6.44220301,9.04821452 6.79257034,9.38724792 L9.07061413,11.5915999 L14.2601843,6.57006452 C14.6103875,6.23103112 15.1764539,6.23103112 15.5268212,6.57006452 C15.8770245,6.90893916 15.8770245,7.45669397 15.5268212,7.79572737 Z" id="Path" fill="#FAFAFA"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</g>
+</svg>

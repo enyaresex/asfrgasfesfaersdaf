@@ -1,0 +1,194 @@
+@custom-media --min-xs (min-width: 360px);
+@custom-media --min-sm (min-width: 576px);
+@custom-media --min-md (min-width: 768px);
+@custom-media --min-lg (min-width: 992px);
+@custom-media --min-xl (min-width: 1240px);
+@custom-media --min-xxl (min-width: 1440px);
+
+:root {
+  /* colors */
+  --color-black: #111217;
+  --color-black2: #0F0F12;
+  --color-black3: #17181F;
+
+  --color-white: #FFFFFF;
+  --color-white2: rgba(255, 255, 255, 0.7);
+  --color-white3: rgba(255, 255, 255, 0.2);
+
+  --color-gray: #959AA2;
+  --color-gray2: rgba(95, 97, 112, 0.7);
+
+  --color-dark-gray: #1C1E26;
+  --color-dark-gray2: #262831;
+  --color-dark-gray3: #464853;
+  --color-dark-gray4: #4F515C;
+
+  --color-red: #EB2C44;
+
+  --color-green: #00c202;
+  --color-green2: #48B474;
+
+  --color-yellow: #EEB502;
+  --color-orange: #FA6400;
+
+  --color-bronze: #B3774F;
+  --color-gold: #F7B500;
+  --color-platinum: #E5E5E5;
+  --color-silver: var(--color-gray);
+
+  /* font-sizes */
+  --font-size-headline1: 40px;
+  --font-size-headline2: 30px;
+  --font-size-headline3: 24px;
+  --font-size-headline4: 20px;
+  --font-size-headline5: 15px;
+  --font-size-headline6: 14px;
+
+  --font-size-tiny: 10px;
+  --font-size-smaller: 12px;
+  --font-size-small: 14px;
+  --font-size: 16px;
+  --font-size-big: 19px;
+  --font-size-bigger: 26px;
+  --font-size-huge: 34px;
+
+  /* buttons */
+  --button-horizontal-padding: 15px;
+  --button-horizontal-padding-xs: 40px;
+
+  /* forms */
+  --form-component-large-height: 48px;
+  --form-component-medium-height: 44px;
+  --form-component-small-height: 40px;
+
+  --form-component-horizontal-padding: 16px;
+  --form-component-border-radius: 8px;
+
+  /* padding */
+  --section-vertical-padding: 30px 0;
+  --section-horizantal-padding: 30px 0;
+
+  /* transition */
+  --transition-duration: 150ms;
+
+  /* sidebar */
+  --sidebar-right-width: 240px;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/GreycliffCF-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/GreycliffCF-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/GreycliffCF-DemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/GreycliffCF-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/GreycliffCF-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/GreycliffCF-Heavy.otf") format("opentype");
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+
+  padding: 0;
+
+  font-family: inherit;
+
+  background-color: transparent;
+
+  border: none;
+
+  outline: none;
+  opacity: 1;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-dark-gray4) var(--color-dark-gray);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark-gray4);
+
+  border: 2px solid var(--color-dark-gray);
+  border-radius: 20px;
+}
+
+body {
+  font-family: "Greycliff CF", sans-serif;
+  font-size: var(--font-size);
+  line-height: 1.4;
+
+  background-color: var(--color-black);
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+
+  &.has-background-shade, &.has-duel-chat-expanded, &.has-filter-sort, &.has-modal-open, &.has-tournament-chat-expanded, &.has-non-static-sidebar-open, &.has-user-page-open {
+    overflow: hidden;
+  }
+}
+
+h1 {
+  font-size: var(--font-size-headline1);
+}
+
+h2 {
+  font-size: var(--font-size-headline2);
+}
+
+h3 {
+  font-size: var(--font-size-headline3);
+}
+
+h4 {
+  font-size: var(--font-size-headline4);
+}
+
+h5 {
+  font-size: var(--font-size-headline5);
+}
+
+h6 {
+  font-size: var(--font-size-headline6);
+}

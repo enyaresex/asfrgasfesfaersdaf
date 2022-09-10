@@ -1,0 +1,58 @@
+.filterSortForm {
+  &:not(.vertical) {
+    flex: 1;
+  }
+
+  .filter, .sort {
+    display: grid;
+
+    grid-gap: 22px;
+
+    margin-bottom: 22px;
+
+    .filterTitle {
+      display: grid;
+
+      align-items: center;
+      justify-content: flex-start;
+
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 10px;
+
+      font-weight: 700;
+
+      svg {
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        fill: var(--color-red);
+      }
+    }
+
+    .content {
+      display: grid;
+
+      grid-gap: 16px;
+    }
+  }
+}
+
+@media (--min-md) {
+  .filterSortForm {
+    &:not(.vertical) {
+      .filter, .sort {
+        .filterTitle {
+          margin-bottom: 15px;
+        }
+
+        .content {
+          display: grid;
+
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}

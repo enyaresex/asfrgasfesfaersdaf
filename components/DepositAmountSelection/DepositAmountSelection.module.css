@@ -1,0 +1,29 @@
+.depositAmountSelection {
+  display: grid;
+
+  grid-gap: 20px;
+
+  .title {
+    font-weight: 700;
+  }
+
+  .selectionWrapper {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-row-gap: 12px;
+    grid-column-gap: 24px;
+
+    .formGroup {
+      margin: 0;
+    }
+  }
+}
+
+@media (--min-xs) {
+  .depositAmountSelection {
+    .selectionWrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

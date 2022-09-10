@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  height: 40px;
+
+  padding: 8px;
+
+  color: var(--color-white);
+
+  cursor: pointer;
+
+  border-radius: 6px;
+
+  transition: background-color var(--transition-duration) ease;
+
+  &[data-focus-visible-added], &:hover {
+    background-color: var(--color-dark-gray3);
+  }
+}

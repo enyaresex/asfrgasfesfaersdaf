@@ -1,0 +1,21 @@
+<svg width="36px" height="24px" viewBox="0 0 36 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <radialGradient cx="78.7669139%" cy="50%" fx="78.7669139%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#F8DB05" offset="0%"></stop>
+            <stop stop-color="#EEB502" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header/Medium/No-Button-+-No-Badges" transform="translate(-832.000000, -29.000000)" fill="url(#radialGradient-1)" stroke="#2E2E32" stroke-width="2">
+            <g id="Group" transform="translate(716.000000, 20.000000)">
+                <g id="GA-Coins" transform="translate(0.000000, 8.000000)">
+                    <g id="Group-2" transform="translate(117.000000, 2.000000)">
+                        <circle id="Oval" cx="10.8870968" cy="10.8870968" r="10.8870968"></circle>
+                        <circle id="Oval" cx="15.8295394" cy="10.8870968" r="10.8870968"></circle>
+                        <circle id="Oval" cx="22.8295394" cy="10.8870968" r="10.8870968"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

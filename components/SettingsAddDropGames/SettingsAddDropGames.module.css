@@ -1,0 +1,112 @@
+[dir="rtl"]{
+  .settingsAddDropGames {
+    .addDropGames {
+      .form {
+        .warning {
+          svg {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"]{
+  .settingsAddDropGames {
+    .addDropGames {
+      .form {
+        .warning {
+          svg {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.settingsAddDropGames {
+  > * {
+    margin-bottom: 48px;
+  }
+
+  .addDropGames {
+    > * {
+      margin-bottom: 24px;
+    }
+
+    .form {
+      .muted {
+        font-size: var(--font-size-small);
+        font-weight: 500;
+        line-height: 1.43;
+        color: var(--color-gray);
+      }
+
+      .warning {
+        display: flex;
+
+        align-items: center;
+
+        margin: 8px 0 16px 0;
+
+        font-size: var(--font-size-smaller);
+        font-weight: 500;
+        color: var(--color-gray);
+
+        svg {
+          display: inline-block;
+
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    .addedGames {
+      display: grid;
+
+      grid-gap: 16px;
+
+      margin: 20px 0;
+
+      .emptyState {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+}
+
+@media (--min-lg) {
+  .settingsAddDropGames {
+    .addDropGames {
+      .form {
+        .muted {
+          margin-bottom: 16px;
+        }
+
+        .fieldset {
+          display: grid;
+
+          grid-template-columns: repeat(2, 1fr);
+          grid-row-gap: 16px;
+          grid-column-gap: 24px;
+
+          > * {
+            margin: 0;
+          }
+        }
+      }
+
+      .addedGames {
+        display: grid;
+
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-gap: 10px;
+
+        margin: 20px 0;
+      }
+    }
+  }
+}

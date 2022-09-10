@@ -1,0 +1,145 @@
+.button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: row;
+
+  padding: 0 var(--button-horizontal-padding);
+
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  color: var(--color-white);
+
+  border-radius: var(--form-component-border-radius);
+
+  transition: background-color 150ms ease, border-color 150ms ease;
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &.withIcon {
+    svg {
+      display: block;
+
+      width: 24px;
+      height: 24px;
+
+      margin: 0 8px;
+    }
+  }
+
+  &.iconOnly {
+    padding: 0 16px;
+
+    svg {
+      display: block;
+
+      height: 40%;
+
+      fill: var(--color-gray);
+    }
+  }
+
+  &:disabled {
+    && {
+      cursor: not-allowed;
+
+      background-color: var(--color-dark-gray);
+      color: var(--color-dark-gray3);
+    }
+  }
+
+  /* sizes */
+  &.sizeLarge {
+    height: var(--form-component-large-height);
+
+    font-size: var(--font-size);
+  }
+
+  &.sizeMedium {
+    height: var(--form-component-medium-height);
+  }
+
+  &.sizeSmall {
+    height: var(--form-component-small-height);
+  }
+
+  /* variants */
+  &.variantPrimary {
+    background-color: var(--color-red);
+
+    border: 2px solid transparent;
+
+    &:not(:disabled) {
+      &[data-focus-visible-added], &:hover {
+        background-color: var(--color-black2);
+
+        border-color: var(--color-red);
+      }
+    }
+
+    &.outline {
+      background-color: transparent;
+
+      border: 2px solid var(--color-red);
+
+      &[data-focus-visible-added], &:hover {
+        background-color: var(--color-red);
+      }
+    }
+  }
+
+  &.variantSecondary {
+    background-color: var(--color-dark-gray2);
+
+    border: 2px solid transparent;
+
+    &:not(:disabled) {
+      &[data-focus-visible-added], &:hover {
+        background-color: var(--color-black2);
+
+        border-color: var(--color-dark-gray2);
+      }
+    }
+
+    &.outline {
+      background-color: var(--color-black2);
+
+      border: 2px solid var(--color-dark-gray2);
+
+      &[data-focus-visible-added], &:hover {
+        background-color: var(--color-dark-gray);
+
+        border-color: var(--color-dark-gray);
+      }
+    }
+  }
+
+  &.variantGreen {
+    background-color: var(--color-green2);
+
+    border: 2px solid transparent;
+
+    &:not(:disabled) {
+      &[data-focus-visible-added], &:hover {
+        background-color: var(--color-black2);
+
+        border-color: var(--color-green2);
+      }
+    }
+  }
+}
+
+@media (--min-xs) {
+  .button {
+    padding: 0 var(--button-horizontal-padding-xs);
+  }
+}

@@ -1,0 +1,100 @@
+.leaderboardTournamentRanking {
+  overflow-x: auto;
+
+  .wrapper {
+    .topRanks {
+      display: grid;
+
+      grid-gap: 6px;
+
+      margin-bottom: 24px;
+    }
+
+    .ranks {
+      margin-top: 30px;
+
+      .header {
+        padding: 12px 10px;
+
+        font-weight: 700;
+
+        background-color: var(--color-dark-gray);
+        color: var(--color-white);
+
+        border-radius: 8px 8px 0 0;
+
+        transition: padding 150ms ease;
+      }
+
+      .body {
+        padding: 24px 10px;
+
+        font-size: var(--font-size-small);
+        font-weight: 600;
+        line-height: 1.5;
+
+        background-color: var(--color-black3);
+        color: var(--color-gray);
+
+        transition: padding 150ms ease;
+      }
+    }
+
+    .showMoreButtonWrapper {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      flex-direction: row;
+
+      margin: 24px 0;
+    }
+  }
+}
+
+@media (--min-xs) {
+  .leaderboardTournamentRanking {
+    .isEmpty {
+      .square {
+        padding: 60px 80px;
+      }
+    }
+
+    .wrapper {
+      .ranks {
+        .header {
+          padding: 12px 32px;
+        }
+
+        .body {
+          padding: 24px 32px;
+
+          .userRanks {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-md) {
+  .leaderboardTournamentRanking {
+    .wrapper {
+      .topRanks {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (--min-xl) {
+  .leaderboardTournamentRanking {
+    .wrapper {
+      .topRanks {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}

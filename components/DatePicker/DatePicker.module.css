@@ -1,0 +1,9 @@
+.datePicker {
+  :global {
+    .react-datepicker-wrapper {
+      display: block;
+
+      width: 100%;
+    }
+  }
+}

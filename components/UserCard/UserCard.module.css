@@ -1,0 +1,132 @@
+[dir="rtl"] {
+  .userCard {
+    .content {
+      .detail {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .userCard {
+    .content {
+      .detail {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.userCard {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 10px;
+
+  font-size: var(--font-size-small);
+
+  background-color: var(--color-black3);
+
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+  .content {
+    display: flex;
+
+    flex-direction: row;
+
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    .avatar {
+      position: relative;
+
+      display: block;
+
+      flex: 0 0 75px;
+    }
+
+    .detail {
+      min-width: 0;
+
+      .username {
+        display: block;
+
+        font-size: var(--font-size);
+        font-weight: 700;
+
+        color: var(--color-white);
+        text-decoration: none;
+
+        &[data-focus-visible-added], &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .gameUsername {
+        overflow: hidden;
+
+        font-size: var(--font-size-smaller);
+        font-weight: 500;
+
+        color: var(--color-gray);
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .sendChallenge {
+    text-align: center;
+
+    .challengeButton {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (--min-sm) {
+  [dir="rtl"] {
+    .userCard {
+      .sendChallenge {
+        text-align: left;
+      }
+    }
+  }
+
+  [dir="ltr"] {
+    .userCard {
+      .sendChallenge {
+        text-align: right;
+      }
+    }
+  }
+
+  .userCard {
+    grid-template-columns: repeat(2, minmax(125px, 1fr));
+
+    padding: 8px 10px;
+
+    .content {
+      justify-content: flex-start;
+
+      .detail {
+        flex: 1 1 auto;
+      }
+    }
+
+    .sendChallenge {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.duelStatus {
+  padding: 8px 10px;
+
+  font-size: var(--font-size-smaller);
+  font-weight: bold;
+  text-align: center;
+
+  border: solid 1px transparent;
+  border-radius: 6px;
+
+  &.canceled, &.declined, &.in_dispute {
+    color: var(--color-red);
+
+    border-color: var(--color-red);
+  }
+
+  &.ended, &.expired {
+    color: var(--color-gray);
+
+    border-color: var(--color-gray);
+  }
+
+  &.in_progress {
+    color: var(--color-orange);
+
+    border-color: var(--color-orange);
+  }
+
+  &.open {
+    color: var(--color-green);
+
+    border-color: var(--color-green);
+  }
+
+  &.checking_in, &.declaring_result, &.invited {
+    color: var(--color-yellow);
+
+    border-color: var(--color-yellow);
+  }
+}

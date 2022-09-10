@@ -1,0 +1,99 @@
+.maintenancePage {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .shade {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .content {
+    position: relative;
+    z-index: 12;
+
+    .logo {
+      display: block;
+
+      max-width: 400px;
+
+      margin: auto;
+    }
+
+    .body {
+      max-width: 400px;
+      margin-top: 40px;
+
+      .title {
+        font-size: var(--font-size-bigger);
+      }
+
+      .description {
+        margin-top: 20px;
+
+        font-weight: 600;
+
+        p {
+          &:not(:first-child) {
+            margin-top: 1em;
+          }
+        }
+
+        a {
+          color: var(--color-white);
+
+          transition: color 150ms ease;
+
+          &[data-focus-visible-added], &:hover {
+            color: var(--color-red);
+          }
+        }
+      }
+    }
+
+    .language {
+      max-width: 200px;
+
+      margin: 30px auto 0 auto;
+    }
+  }
+}
+
+@media (--min-md) {
+  .maintenancePage {
+    .content {
+      .body {
+        .title {
+          font-size: var(--font-size-huge);
+        }
+
+        .description {
+          font-size: var(--font-size-big);
+        }
+      }
+    }
+  }
+}

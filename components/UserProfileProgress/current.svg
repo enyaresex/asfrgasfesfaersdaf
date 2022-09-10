@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Arrows/Right/Primary</title>
+    <g id="Duel-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gamer-Arena--Duel-Detail---Progress-Blank-360px" transform="translate(-10.000000, -144.000000)">
+            <g id="Icons/Arrows/Right/Primary" transform="translate(1.000000, 138.000000)">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                <path d="M15.8909396,9.26651481 L12.245302,12.8018223 L8.59966443,9.26651481 C8.23322148,8.91116173 7.64127517,8.91116173 7.27483221,9.26651481 C6.90838926,9.62186788 6.90838926,10.1958998 7.27483221,10.5512528 L11.5875839,14.7334852 C11.9540268,15.0888383 12.5459732,15.0888383 12.9124161,14.7334852 L17.2251678,10.5512528 C17.5916107,10.1958998 17.5916107,9.62186788 17.2251678,9.26651481 C16.8587248,8.92027335 16.2573826,8.91116173 15.8909396,9.26651481 L15.8909396,9.26651481 Z" id="🔹-Icon-Color" fill="#959AA2" transform="translate(12.250000, 12.000000) scale(1, -1) rotate(-90.000000) translate(-12.250000, -12.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

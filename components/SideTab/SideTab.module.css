@@ -1,0 +1,143 @@
+[dir="rtl"] {
+  .sideTab {
+    padding: 0 16px 0 10px;
+
+    .arrow {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    .body {
+      padding: 16px 0 16px 16px;
+    }
+  }
+}
+
+[dir="ltr"] {
+  .sideTab {
+    padding: 0 10px 0 16px;
+
+    .body {
+      padding: 16px 16px 16px 0;
+    }
+  }
+}
+
+.sideTab {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: 24px 1fr 16px;
+  grid-gap: 16px;
+
+  align-items: center;
+
+  font-size: var(--font-size);
+  font-weight: 600;
+  color: var(--color-gray);
+
+  text-decoration: none;
+
+  background-color: var(--color-black3);
+
+  transition: background-color 150ms ease, color 150ms ease;
+
+  &.active, &[data-focus-visible-added], &:hover {
+    color: var(--color-white);
+
+    background-color: var(--color-dark-gray2);
+
+    .icon, .arrow {
+      svg {
+        fill: var(--color-white);
+      }
+    }
+  }
+
+  &:not(:first-child) {
+    .body {
+      border-top: solid 1px var(--color-white3);
+    }
+  }
+
+  p + && {
+    .body {
+      border-top: none;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 3px;
+
+    content: '';
+
+    border-radius: 2px;
+
+    transition: background-color 150ms ease;
+  }
+
+  .icon {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    svg {
+      display: block;
+
+      height: 20px;
+
+      fill: var(--color-gray);
+
+      transition: fill 150ms ease;
+    }
+  }
+
+  .arrow {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    svg {
+      display: block;
+
+      width: 10px;
+
+      fill: var(--color-gray);
+
+      transition: fill 150ms ease;
+    }
+  }
+
+  .body {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: var(--font-size-small)
+  }
+}
+
+@media (--min-lg) {
+  .sideTab {
+    && .body {
+      border-top: none;
+    }
+  }
+}

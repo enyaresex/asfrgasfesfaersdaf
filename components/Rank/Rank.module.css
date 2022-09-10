@@ -1,0 +1,284 @@
+[dir="rtl"] {
+  .rank {
+    .header {
+      .details {
+        .to {
+          text-align: left;
+        }
+      }
+    }
+
+    .content {
+      .wrapper {
+        .gameStats {
+          .gameInfo {
+            &:not(:last-child) {
+              &:after {
+                left: -5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .rank {
+    .header {
+      .details {
+        .to {
+          text-align: right;
+        }
+      }
+    }
+
+    .content {
+      .wrapper {
+        .gameStats {
+          .gameInfo {
+            &:not(:last-child) {
+              &:after {
+                right: -5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.rank {
+  position: relative;
+  z-index: 11;
+
+  margin-bottom: 60px;
+
+  .toggle {
+    position: absolute;
+    right: 0;
+    bottom: -24px;
+    left: 0;
+
+    width: 20%;
+    height: 24px;
+
+    padding: 0 20px;
+    margin: 0 auto;
+
+    background-color: var(--color-black3);
+    border-radius: 0 0 12px 12px;
+
+    svg {
+      display: block;
+
+      width: 11px;
+      height: 6px;
+
+      margin: 0 auto;
+    }
+
+    &.toggled {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .header {
+    background-color: var(--color-black3);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.33);
+
+    .details {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-gray);
+
+      .from {
+        .userRank {
+          font-size: var(--font-size);
+          color: var(--color-white);
+        }
+      }
+
+      .game {
+        font-weight: 700;
+        color: var(--color-white);
+        text-align: center;
+      }
+    }
+
+    .progress {
+      display: grid;
+
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 10px;
+
+      padding-bottom: 15px;
+
+      svg {
+        display: block;
+
+        width: 18px;
+        height: 22px;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 60px 15px;
+
+    background-color: var(--color-black3);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.33);
+
+    .wrapper {
+      max-width: 540px;
+
+      .gameStats {
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 30px;
+
+        .avatar {
+          display: flex;
+
+          grid-column: span 4;
+
+          justify-content: center;
+
+          img {
+            width: 54px;
+            height: 54px;
+
+            border: 1px solid var(--color-green);
+          }
+        }
+
+        .gameInfo {
+          position: relative;
+
+          display: grid;
+
+          font-size: var(--font-size-headline4);
+          font-weight: 600;
+          color: var(--color-white);
+          text-align: center;
+
+          span {
+            font-size: var(--font-size-small);
+            color: var(--color-gray);
+          }
+
+          &:not(:last-child) {
+            &:after {
+              position: absolute;
+
+              top: 0;
+
+              width: 1px;
+              height: 100%;
+
+              content: '';
+
+              background-color: var(--color-gray);
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+
+      .rankingLevels {
+        display: grid;
+
+        grid-gap: 22px;
+
+        .title {
+          margin-bottom: 5px;
+
+          font-size: var(--font-size);
+          font-weight: 600;
+          color: var(--color-gray);
+        }
+
+        .rankInfo {
+          display: grid;
+
+          grid-template-columns: min-content 1fr;
+          grid-gap: 18px;
+
+          .info {
+            display: grid;
+
+            grid-template-columns: 80px auto;
+            grid-gap: 15px;
+
+            font-size: var(--font-size);
+            font-weight: 600;
+
+            .bronze {
+              color: var(--color-bronze);
+            }
+
+            .gold {
+              color: var(--color-gold);
+            }
+
+            .platinum {
+              color: var(--color-platinum);
+            }
+
+            .silver {
+              color: var(--color-silver);
+            }
+          }
+
+          svg {
+            display: block;
+
+            width: 18px;
+            height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-xs) {
+  .rank {
+    .content {
+      padding: 60px 30px;
+
+      .wrapper {
+        .gameStats {
+          grid-template-columns: repeat(5, 1fr);
+
+          .avatar {
+            grid-column: span 1;
+          }
+        }
+      }
+    }
+  }
+}

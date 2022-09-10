@@ -1,0 +1,170 @@
+[dir="rtl"] {
+  .settingsBlockedUser {
+    .content {
+      .action {
+        margin: -8px 8px 0 0;
+
+        .username {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .settingsBlockedUser {
+    .content {
+      .action {
+        margin: -8px 0 0 8px;
+
+        .username {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+.settingsBlockedUser {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+  grid-gap: 16px;
+
+  padding: 16px;
+
+  background-color: var(--color-dark-gray);
+  border-radius: 8px;
+
+  .avatar {
+    transition: transform 150ms ease;
+
+    &[data-focus-visible-added], &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .username {
+    font-size: var(--font-size);
+    font-weight: 700;
+    color: var(--color-white);
+    text-decoration: none;
+
+    transition: text-decoration 150ms ease;
+
+    &[data-focus-visible-added], &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .content {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    .info {
+      display: flex;
+
+      align-items: center;
+
+      font-size: var(--font-size);
+      font-weight: 700;
+    }
+
+    .action {
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: flex-end;
+      justify-content: space-between;
+
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-gray);
+      text-align: center;
+
+      .button {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .button {
+    align-self: flex-start;
+
+    padding: 8px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    &[data-focus-visible-added], &:hover {
+      background-color: var(--color-dark-gray3);
+    }
+
+    svg {
+      display: block;
+
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+@media (--min-lg) {
+  [dir="rtl"] {
+    .settingsBlockedUser {
+      .topInfo {
+        margin: 0 0 -8px -8px;
+      }
+    }
+  }
+
+  [dir="ltr"] {
+    .settingsBlockedUser {
+      .topInfo {
+        margin: 0 -8px -8px 0;
+      }
+    }
+  }
+
+  .settingsBlockedUser {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px 12px 12px 12px;
+
+    .topInfo {
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .avatar {
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 8px;
+    }
+
+    .username {
+      text-align: center;
+    }
+  }
+}

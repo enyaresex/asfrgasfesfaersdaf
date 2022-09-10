@@ -1,0 +1,160 @@
+.quickDuel {
+  position: relative;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 502px;
+
+    background: url('./background.jpg') no-repeat top center;
+    background-size: cover;
+  }
+
+  .container {
+    > * {
+      z-index: 2;
+    }
+
+    .header {
+      display: grid;
+
+      grid-template-columns: auto 1fr;
+      grid-gap: 10px;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 24px;
+
+      svg {
+        display: block;
+
+        width: 45px;
+        height: 45px;
+
+        margin: 10px;
+
+        fill: var(--color-red);
+      }
+
+      .title {
+        color: var(--color-white);
+
+        .description {
+          font-size: var(--font-size-small);
+          color: var(--color-gray);
+        }
+      }
+    }
+
+    .content {
+      align-self: center;
+
+      width: 100%;
+
+      .sub {
+        display: grid;
+
+        grid-gap: 10px;
+
+        .info {
+          margin-bottom: 15px;
+
+          font-size: var(--font-size-smaller);
+          font-weight: 500;
+
+          color: var(--color-gray);
+        }
+
+        .redirect {
+          text-align: center;
+
+          a {
+            font-size: var(--font-size-small);
+            font-weight: 600;
+            color: var(--color-gray);
+            text-decoration: underline;
+
+            &[data-focus-visible-added], &:hover {
+              color: var(--color-red);
+            }
+          }
+        }
+
+        .submit {
+          display: flex;
+
+          justify-content: center;
+
+          .submitButton {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-sm) {
+  .quickDuel {
+    .container {
+      .header {
+        grid-template-columns: auto;
+
+        grid-gap: 15px;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 30px;
+
+        text-align: center;
+
+        svg {
+          margin: 10px auto;
+        }
+
+        .title {
+          .description {
+            font-size: var(--font-size-headline4);
+            font-weight: 600;
+          }
+        }
+      }
+
+      .content {
+        max-width: 456px;
+
+        .sub {
+          grid-gap: 15px;
+
+          .info {
+            margin-bottom: 30px;
+          }
+
+          .submit {
+            .submitButton {
+              max-width: 75%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-md) {
+  .quickDuel {
+    .container {
+      .content {
+        max-width: 568px;
+      }
+    }
+  }
+}

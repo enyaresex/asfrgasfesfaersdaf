@@ -1,0 +1,157 @@
+[dir="rtl"] {
+  .filterSortLayout {
+    .toggle {
+      left: 0;
+
+      svg {
+        transform: rotate(180deg);
+
+        &.opened {
+          transform: rotate(0);
+        }
+      }
+
+      &.open {
+        left: var(--sidebar-right-width);
+      }
+    }
+
+    .verticalFilterSort {
+      left: 0;
+
+      &.closed {
+        left: calc(var(--sidebar-right-width) * -1);
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .filterSortLayout {
+    .toggle {
+      right: 0;
+
+      svg {
+        transform: rotate(0);
+
+        &.opened {
+          transform: rotate(180deg);
+        }
+      }
+
+      &.open {
+        right: var(--sidebar-right-width);
+      }
+    }
+
+    .verticalFilterSort {
+      right: 0;
+
+      &.closed {
+        right: calc(var(--sidebar-right-width) * -1);
+      }
+    }
+  }
+}
+
+.filterSortLayout {
+  position: relative;
+
+  display: flex;
+
+  flex: 1;
+
+  flex-direction: column;
+
+  min-height: 100%;
+
+  .toggle {
+    position: fixed;
+    top: calc(64px + 32px);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+
+    gap: 8px;
+
+    padding: 16px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background-color: var(--color-black);
+    color: var(--color-gray);
+
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.53);
+
+    transition: right 150ms ease, top 150ms ease;
+
+    svg {
+      display: block;
+
+      width: auto;
+      height: 12px;
+
+      &.closed {
+        fill: var(--color-red);
+      }
+
+      &.opened {
+        fill: var(--color-gray);
+      }
+    }
+
+    &[data-focus-visible-added], &:hover {
+      text-decoration: underline;
+
+      svg {
+        &.closed {
+          filter: drop-shadow(0 0 2px var(--color-red));
+        }
+
+        &.opened {
+          filter: drop-shadow(0 0 2px var(--color-gray));
+        }
+      }
+    }
+  }
+
+  .verticalFilterSort {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+
+    width: var(--sidebar-right-width);
+    min-height: 100%;
+
+    transition: right 150ms ease, top 150ms ease;
+  }
+
+  .main {
+    width: 100%;
+
+    transition: width 150ms ease;
+
+    &.shrink {
+      width: calc(100% - 240px);
+    }
+  }
+}
+
+@media (--min-md) {
+  .filterSortLayout {
+    .toggle {
+      top: calc(80px + 32px);
+    }
+
+    .verticalFilterSort {
+      top: 80px;
+    }
+  }
+}

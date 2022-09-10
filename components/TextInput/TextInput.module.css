@@ -1,0 +1,73 @@
+.textInput {
+  position: relative;
+
+  &.noLabel {
+    input {
+      padding: 0 var(--form-component-horizontal-padding);
+    }
+  }
+
+  .input {
+    display: block;
+
+    width: 100%;
+
+    font-weight: 600;
+
+    color: var(--color-white);
+
+    background-color: var(--color-black2);
+
+    border: 2px solid var(--color-dark-gray2);
+    border-radius: var(--form-component-border-radius);
+
+    transition: border-color 150ms ease;
+
+    &.withLabel {
+      padding: 10px var(--form-component-horizontal-padding) 0 var(--form-component-horizontal-padding);
+    }
+
+    &:focus {
+      border-color: var(--color-red);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+
+      background-color: var(--color-dark-gray2);
+    }
+  }
+
+  /* size */
+  &.sizeLarge {
+    .input {
+      height: var(--form-component-large-height);
+
+      font-size: var(--font-size);
+    }
+  }
+
+  &.sizeMedium {
+    .input {
+      height: var(--form-component-medium-height);
+
+      font-size: var(--font-size-small);
+    }
+  }
+
+  &.sizeSmall {
+    .input {
+      height: var(--form-component-small-height);
+
+      font-size: var(--font-size-smaller);
+    }
+  }
+
+  &.hasError {
+    .input {
+      color: var(--color-red);
+
+      border-color: var(--color-red);
+    }
+  }
+}

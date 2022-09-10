@@ -1,0 +1,14 @@
+{
+  "baseUrl": "http://localhost:8080/",
+  "chromeWebSecurity": false,
+  "experimentalFetchPolyfill": true,
+  "env": {
+    "GAMERARENA_ACCESS_TOKEN_COOKIE_NAME": "gamerarena-development-access-token",
+    "GAMERARENA_API_URL": "https://api.staging.gamerarena.com",
+    "GAMERARENA_COOKIE_DOMAIN": "localhost",
+    "GAMERARENA_LANGUAGE_COOKIE_NAME": "gamerarena-development-language"
+  },
+  "projectId": "ssaq5c",
+  "viewportHeight": 1000,
+  "viewportWidth": 530
+}

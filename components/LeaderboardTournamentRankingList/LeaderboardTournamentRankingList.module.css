@@ -1,0 +1,147 @@
+[dir="rtl"] {
+  .leaderboardTournamentRankingList {
+    .table {
+      text-align: right;
+
+      tbody {
+        tr {
+          td {
+            &:first-child {
+              border-radius: 0 6px 6px 0;
+            }
+
+            &:last-child {
+              border-radius: 6px 0 0 6px;
+            }
+          }
+        }
+      }
+
+      tr {
+        td:first-child, th:first-child {
+          padding: 8px 4px 8px 2px;
+        }
+
+        td:last-child, th:first-child {
+          padding: 8px 2px 8px 4px;
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .leaderboardTournamentRankingList {
+    .table {
+      text-align: left;
+
+      tbody {
+        tr {
+          td {
+            &:first-child {
+              border-radius: 6px 0 0 6px;
+            }
+
+            &:last-child {
+              border-radius: 0 6px 6px 0;
+            }
+          }
+        }
+      }
+
+      tr {
+        td:first-child, th:first-child {
+          padding: 8px 2px 8px 4px;
+        }
+
+        td:last-child, th:first-child {
+          padding: 8px 4px 8px 2px;
+        }
+      }
+    }
+  }
+}
+
+.leaderboardTournamentRankingList {
+  width: 100%;
+
+  overflow-x: auto;
+
+  .table {
+    width: 100%;
+
+    table-layout: auto;
+
+    border-collapse: collapse;
+
+    tbody {
+      tr {
+        &:nth-child(odd), &.authUser {
+          background-color: var(--color-dark-gray2);
+
+          border-radius: 6px;
+        }
+      }
+    }
+
+    tr {
+      padding: 10px 0;
+
+      td, th {
+        padding: 8px;
+
+        transition: padding 150ms ease;
+      }
+
+      th:last-child, td:last-child, th:first-child, td:first-child {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (--min-xs) {
+  [dir="rtl"] {
+    .leaderboardTournamentRankingList {
+      tr {
+        td:first-child, th:first-child {
+          padding: 8px 10px 8px 5px;
+        }
+
+        td:last-child, th:first-child {
+          padding: 8px 5px 8px 10px;
+        }
+      }
+    }
+  }
+
+  [dir="ltr"] {
+    .leaderboardTournamentRankingList {
+      tr {
+        td:first-child, th:first-child {
+          padding: 8px 5px 8px 10px;
+        }
+
+        td:last-child, th:first-child {
+          padding: 8px 10px 8px 5px;
+        }
+      }
+    }
+  }
+
+  .leaderboardTournamentRankingList {
+    tr {
+      td, th {
+        padding: 8px 5px;
+      }
+    }
+  }
+}
+
+@media (--min-sm) {
+  .leaderboardTournamentRankingList {
+    .table {
+      table-layout: fixed;
+    }
+  }
+}

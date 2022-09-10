@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-2" transform="translate(1.000000, 1.000000)" stroke="#959AA2"  stroke-width="1.5">
+            <polygon id="Stroke-1020" points="0 18 18 18 18 1.6875 0 1.6875"></polygon>
+            <line x1="18" y1="7.59375" x2="0" y2="7.59375" id="Stroke-1021"></line>
+            <line x1="3.9375" y1="0" x2="3.9375" y2="3.375" id="Stroke-1022"></line>
+            <line x1="9" y1="0" x2="9" y2="3.375" id="Stroke-1023"></line>
+            <line x1="14.0625" y1="0" x2="14.0625" y2="3.375" id="Stroke-1024"></line>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,183 @@
+[dir="rtl"] {
+  .duelRules {
+    .rules {
+      &.active {
+        .header {
+          svg {
+            transform: rotate(225deg);
+          }
+        }
+      }
+
+      .header {
+        text-align: right;
+
+        svg {
+          margin-right: 30px;
+        }
+      }
+
+      .content {
+        .markdown {
+          h3 {
+            background-position: right center;
+          }
+
+          p {
+            margin-right: 33px;
+          }
+
+          ul {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .duelRules {
+    .rules {
+      &.active {
+        .header {
+          svg {
+            transform: rotate(45deg);
+          }
+        }
+      }
+
+      .header {
+        text-align: left;
+
+        svg {
+          margin-left: 30px;
+        }
+      }
+
+      .content {
+        .markdown {
+          h3 {
+            background-position: left center;
+          }
+
+          p {
+            margin-left: 33px;
+          }
+
+          ul {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.duelRules {
+  .rules {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &.active {
+      .header {
+        border-radius: 8px 8px 0 0;
+
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    .header {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+
+      padding: 14px 16px;
+
+      font-size: var(--font-size);
+      font-weight: 700;
+
+      cursor: pointer;
+
+      background-color: var(--color-dark-gray);
+
+      color: var(--color-white);
+
+      border-radius: 8px;
+
+      transition: background-color 100ms ease;
+
+      svg {
+        width: 17px;
+        height: 17px;
+
+        fill: var(--color-gray);
+
+        transition: transform 150ms ease;
+
+        transform: rotate(0);
+      }
+
+      &[data-focus-visible-added], &:hover, &:active {
+        background-color: var(--color-dark-gray2);
+      }
+    }
+
+    .content {
+      max-height: 740px;
+      margin-top: 2px;
+      padding: 20px 24px;
+
+      overflow-y: auto;
+
+      font-size: var(--font-size);
+      font-weight: 500;
+
+      background-color: var(--color-black3);
+      color: var(--color-white2);
+
+      border-radius: 0 0 8px 8px;
+
+      .markdown {
+        word-break: break-word;
+
+        h3 {
+          font-size: var(--font-size-headline4);
+          text-indent: 33px;
+
+          background-repeat: no-repeat;
+          background-size: 25px 25px;
+
+          &:nth-of-type(1) {
+            background-image: url('./challenge.svg');
+          }
+
+          &:nth-of-type(2) {
+            background-image: url('./sword.svg');
+          }
+
+          &:nth-of-type(3) {
+            background-image: url('./throphy.svg');
+          }
+
+          &:nth-of-type(4) {
+            background-image: url('./warning.svg');
+          }
+        }
+
+        ul {
+          li {
+            text-indent: 17px;
+          }
+        }
+      }
+    }
+  }
+}

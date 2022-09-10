@@ -1,0 +1,53 @@
+.userGamesAccount {
+  display: grid;
+
+  grid-template-columns: auto 2fr minmax(0, 85px);
+  grid-gap: 16px;
+
+  padding: 10px;
+
+  text-decoration: none;
+
+  background-color: var(--color-black3);
+
+  border-radius: 8px;
+
+  &[data-focus-visible-added], &:hover {
+    background-color: var(--color-dark-gray2);
+  }
+
+  .details {
+    .name {
+      font-size: var(--font-size);
+      font-weight: 600;
+      color: var(--color-white);
+    }
+
+    .platform {
+      font-size: var(--font-size-small);
+      font-weight: 500;
+      color: var(--color-gray);
+    }
+
+    .username {
+      margin-top: 5px;
+
+      font-size: var(--font-size);
+      font-weight: 500;
+      color: var(--color-gray);
+    }
+  }
+
+  .rank {
+    display: grid;
+
+    grid-gap: 18px;
+
+    align-items: flex-start;
+    justify-items: flex-end;
+
+    :first-child {
+      align-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+[dir="rtl"] {
+  .progress {
+    .bar {
+      right: 0;
+    }
+
+    .separator {
+      right: 0;
+    }
+  }
+}
+
+[dir="ltr"] {
+  .progress {
+    .bar {
+      left: 0;
+    }
+
+    .separator {
+      left: 0;
+    }
+  }
+}
+
+.progress {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background-color: var(--color-dark-gray3);
+  border-radius: 7px;
+
+  &.barColorGreen {
+    .bar {
+      background-color: var(--color-green);
+    }
+  }
+
+  &.barColorRed {
+    .bar {
+      background-color: var(--color-red);
+    }
+  }
+
+  .bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+    width: 0;
+  }
+
+  .separator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
+    width: 5px;
+
+    background-color: var(--color-black3);
+  }
+}

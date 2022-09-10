@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="15px" viewBox="0 0 13 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Iconly/Light/Delete</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.921569 0 0 0 0 0.172549 0 0 0 0 0.266667 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gamer-Arena-Settings-Social-Account-360px--3-1" transform="translate(-314.000000, -176.000000)">
+            <rect fill="none" x="0" y="0" width="360" height="841"></rect>
+            <g id="Group-4" transform="translate(16.000000, 166.000000)">
+                <path d="M8,0 L320,0 C324.418278,-3.22053779e-14 328,3.581722 328,8 L328,88 C328,92.418278 324.418278,96 320,96 L50.0252057,96 L50.0252057,96 L8,96 C3.581722,96 5.41083001e-16,92.418278 0,88 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="Rectangle" fill="none"></path>
+                <g id="Group" transform="translate(297.000000, 10.000000)" stroke-linecap="round" stroke-linejoin="round">
+                    <g filter="url(#filter-1)" id="Iconly/Light/Delete">
+                        <g id="Delete" transform="translate(1.875000, 1.250000)" stroke="#200E32" stroke-width="1.5">
+                            <path d="M10.2030625,4.667625 C10.2030625,4.667625 9.8636875,8.877 9.6668125,10.650125 C9.5730625,11.497 9.0499375,11.99325 8.1930625,12.008875 C6.5624375,12.03825 4.9299375,12.040125 3.2999375,12.00575 C2.4755625,11.988875 1.9611875,11.486375 1.8693125,10.6545 C1.6711875,8.86575 1.3336875,4.667625 1.3336875,4.667625" id="Stroke-1"></path>
+                            <line x1="11.067625" y1="2.6498125" x2="0.468875" y2="2.6498125" id="Stroke-3"></line>
+                            <path d="M9.025375,2.6498125 C8.53475,2.6498125 8.11225,2.3029375 8.016,1.8223125 L7.864125,1.0623125 C7.770375,0.7116875 7.452875,0.4691875 7.091,0.4691875 L4.445375,0.4691875 C4.0835,0.4691875 3.766,0.7116875 3.67225,1.0623125 L3.520375,1.8223125 C3.424125,2.3029375 3.001625,2.6498125 2.511,2.6498125" id="Stroke-5"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

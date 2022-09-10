@@ -1,0 +1,45 @@
+.withdrawModal {
+  .body {
+    display: grid;
+
+    grid-gap: 24px;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    svg {
+      display: block;
+
+      width: auto;
+      height: 64px;
+
+      margin: 20px auto;
+    }
+
+    .title {
+      font-weight: 700;
+      color: var(--color-green2);
+      text-align: center;
+    }
+
+    .muted {
+      font-size: var(--font-size-small);
+      font-weight: 500;
+      color: var(--color-gray);
+      text-align: center;
+    }
+
+    .white {
+      font-size: var(--font-size-small);
+      font-weight: 500;
+      color: var(--color-white);
+      text-align: center;
+    }
+
+    .button {
+      margin: 30px auto;
+    }
+  }
+}

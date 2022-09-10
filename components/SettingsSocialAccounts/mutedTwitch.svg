@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>discord</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gamer-Arena-Settings-Social-Account-360px--3-1" transform="translate(-32.000000, -526.000000)">
+            <g id="Group-4" transform="translate(16.000000, 510.000000)">
+                <rect id="Rectangle" fill="none" x="0" y="0" width="328" height="96" rx="8"></rect>
+                <g id="discord" transform="translate(16.000000, 16.000000)">
+                    <circle id="Oval" fill="#959AA2" fill-rule="nonzero" cx="32" cy="32" r="32"></circle>
+                    <g filter="url(#filter-1)" id="twitch">
+                        <g transform="translate(16.000000, 16.000000)">
+                            <path d="M0,6.1559949 L0,30.7711276 L8.49815225,30.7711276 L8.49815225,35.3877551 L13.1382114,35.3877551 L17.7708795,30.7696531 L24.7257945,30.7696531 L34,21.5422959 L34,0 L2.31633407,0 L0,6.1559949 Z M5.40724316,3.07431122 L30.9090909,3.07431122 L30.9090909,19.9999796 L25.4988914,25.3848163 L16.9977827,25.3848163 L12.3651146,29.9955459 L12.3651146,25.3848163 L5.40724316,25.3848163 L5.40724316,3.07431122 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                            <polygon id="Path" fill="#000000" fill-rule="nonzero" points="13.877551 9.02040816 16.6530612 9.02040816 16.6530612 18.0408163 13.877551 18.0408163"></polygon>
+                            <polygon id="Path" fill="#000000" fill-rule="nonzero" points="22.2040816 9.02040816 24.9795918 9.02040816 24.9795918 18.0408163 22.2040816 18.0408163"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

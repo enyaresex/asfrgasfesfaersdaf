@@ -1,0 +1,74 @@
+.walletWithdrawRequest {
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  .header {
+    display: grid;
+
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 24px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 10px;
+
+    font-weight: 700;
+    color: var(--color-white);
+
+    background-color: var(--color-dark-gray);
+
+    border-radius: 8px 8px 0 0;
+
+    transition: padding 150ms ease;
+
+    .status {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 6px 10px;
+
+      font-size: var(--font-size-smaller);
+      font-weight: 700;
+      color: var(--color-orange);
+      text-align: center;
+
+      background-color: var(--color-black3);
+      border: solid 1px var(--color-orange);
+      border-radius: 6px;
+    }
+  }
+
+  .body {
+    display: grid;
+
+    grid-gap: 24px;
+
+    padding: 24px 10px;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-gray);
+
+    transition: padding 150ms ease;
+
+    .white {
+      color: var(--color-white);
+    }
+  }
+}
+
+@media (--min-xs) {
+  .walletWithdrawRequest {
+    .header {
+      padding: 12px 32px;
+    }
+
+    .body {
+      padding: 24px 32px;
+    }
+  }
+}

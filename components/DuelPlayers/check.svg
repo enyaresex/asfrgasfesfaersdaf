@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Check</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.760784 0 0 0 0 0.007843 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Duel-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gamer-Arena--Duel-Detail---Host-1-360px" transform="translate(-43.000000, -640.000000)">
+            <g id="Duel-Detail-Card-Copy" transform="translate(8.695652, 363.000000)">
+                <g id="Check-Status" transform="translate(8.695652, 72.000000)" filter="url(#filter-1)">
+                    <g transform="translate(26.760870, 201.000000)">
+                        <path d="M3.71224307,12.294831 L1.21000894,9.78986083 C0.931188561,9.51073559 0.487935657,9.51073559 0.209115282,9.78986083 C-0.0697050938,10.0689861 -0.0697050938,10.5127237 0.209115282,10.7918489 L3.20464701,13.7906561 C3.48346738,14.0697813 3.93386953,14.0697813 4.2126899,13.7906561 L11.7908847,6.21133201 C12.0697051,5.93220676 12.0697051,5.48846918 11.7908847,5.20934394 C11.5120643,4.93021869 11.0688114,4.93021869 10.7899911,5.20934394 L3.71224307,12.294831 Z" id="Icon/Check" stroke="#FFFFFF" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

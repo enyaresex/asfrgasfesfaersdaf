@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>facebook</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gamer-Arena-Settings-Social-Account-360px--3-1" transform="translate(-32.000000, -182.000000)">
+            <g id="Group-4" transform="translate(16.000000, 166.000000)">
+                <path d="M8,0 L320,0 C324.418278,-3.22053779e-14 328,3.581722 328,8 L328,88 C328,92.418278 324.418278,96 320,96 L50.0252057,96 L50.0252057,96 L8,96 C3.581722,96 5.41083001e-16,92.418278 0,88 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="Rectangle" fill="none"></path>
+                <g id="Game-Info" transform="translate(16.000000, 16.000000)" fill-rule="nonzero">
+                    <g id="facebook">
+                        <circle id="Oval" fill="#959AA2" cx="31.7723186" cy="31.7723186" r="31.7723186"></circle>
+                        <path d="M40.7598584,35.0160708 L35.0904779,35.0160708 L35.0904779,55.7860531 L26.500885,55.7860531 L26.500885,35.0160708 L22.415646,35.0160708 L22.415646,27.7166726 L26.500885,27.7166726 L26.500885,22.9931327 C26.500885,19.615292 28.1054159,14.3259469 35.1669381,14.3259469 L41.5295575,14.3525664 L41.5295575,21.4378761 L36.9130619,21.4378761 C36.155823,21.4378761 35.0910442,21.8162124 35.0910442,23.4275398 L35.0910442,27.723469 L41.5103009,27.723469 L40.7598584,35.0160708 Z" id="Path" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

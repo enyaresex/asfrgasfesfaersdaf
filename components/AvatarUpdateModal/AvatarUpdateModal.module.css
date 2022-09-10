@@ -1,0 +1,79 @@
+[dir="rtl"] {
+  .avatarUpdateModal {
+    .inputWrapper {
+      .input {
+        left: 0;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .avatarUpdateModal {
+    .inputWrapper {
+      .input {
+        right: 0;
+      }
+    }
+  }
+}
+
+.avatarUpdateModal {
+  .errors {
+    margin-bottom: 20px;
+  }
+
+  .inputWrapper {
+    position: relative;
+
+    .inputButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      flex-direction: row;
+
+      gap: 20px;
+
+      width: 100%;
+
+      padding: 16px 20px;
+
+      font-size: var(--font-size-bigger);
+      font-weight: 600;
+
+      text-align: center;
+      
+      color: var(--color-white);
+
+      border: 2px dashed var(--color-dark-gray3);
+      border-radius: 8px;
+
+      transition: background-color 100ms ease;
+
+      svg {
+        display: block;
+
+        height: 24px;
+
+        fill: var(--color-white);
+      }
+
+      &[data-focus-visible-added], &:hover {
+        background-color: var(--color-dark-gray2);
+      }
+    }
+
+    .input {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+
+      width: 100%;
+
+      pointer-events: none;
+
+      opacity: 0;
+    }
+  }
+}

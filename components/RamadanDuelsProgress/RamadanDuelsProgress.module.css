@@ -1,0 +1,130 @@
+.ramadanDuelsProgress {
+  .muted {
+    font-size: var(--font-size-small);
+    color: var(--color-gray);
+  }
+
+  .wrapper {
+    display: flex;
+
+    flex-direction: column-reverse;
+
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      display: block;
+
+      width: 100px;
+      min-width: 100px;
+      height: auto;
+
+      margin: 0 0 20px 0;
+
+      transition: margin var(--transition-duration) ease, width var(--transition-duration) ease;
+    }
+
+    &.completed {
+      .content {
+        .form {
+          flex: 1;
+
+          .fieldset {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            .errors {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      display: grid;
+
+      flex: 1;
+
+      grid-template-columns: 1fr;
+
+      grid-gap: 24px;
+
+      align-items: center;
+      justify-content: space-between;
+
+      .progress {
+        .count {
+          margin-bottom: 8px;
+
+          font-size: var(--font-size-small);
+          font-weight: 700;
+          color: var(--color-white);
+
+          .amount {
+            font-size: var(--font-size);
+            font-weight: bold;
+            color: var(--color-green);
+          }
+        }
+      }
+
+      .info {
+        font-weight: 600;
+        color: var(--color-gray);
+      }
+    }
+  }
+}
+
+@media (--min-sm) {
+  [dir="rtl"]{
+    .ramadanDuelsProgress {
+      .wrapper:not(.completed) {
+        .icon {
+          margin: 0 24px 0 0;
+        }
+      }
+    }
+  }
+
+  [dir="ltr"]{
+    .ramadanDuelsProgress {
+      .wrapper:not(.completed) {
+        .icon {
+          margin: 0 0 0 24px;
+        }
+      }
+    }
+  }
+
+  .ramadanDuelsProgress {
+    .wrapper:not(.completed) {
+      flex-direction: row;
+
+      justify-content: space-between;
+
+      .icon {
+        width: 96px;
+      }
+
+      .content {
+        margin-top: 0;
+
+        &.completed {
+          flex-direction: column-reverse;
+
+          .form {
+            .fieldset {
+              align-items: flex-start;
+            }
+          }
+        }
+      }
+    }
+  }
+}

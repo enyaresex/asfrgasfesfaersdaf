@@ -1,0 +1,198 @@
+[dir="rtl"] {
+  .notification {
+    text-align: right;
+
+    .column {
+      &.actionColumn {
+        margin-right: auto;
+      }
+
+      .icon {
+        margin-right: 10px;
+      }
+
+      .body {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .notification {
+    text-align: left;
+
+    .column {
+      &.actionColumn {
+        margin-left: auto;
+      }
+
+      .icon {
+        margin-left: 10px;
+      }
+
+      .body {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.notification {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  width: 100%;
+
+  padding: 12px 10px;
+
+  margin: 0 -5px;
+
+  border-radius: 8px;
+
+  transition: background-color ease 150ms;
+
+  &.allActionable {
+    cursor: pointer;
+
+    &[data-focus-visible-added], &:hover {
+      background-color: var(--color-dark-gray3);
+
+      .body {
+        .description, .dateTime {
+          color: var(--color-white);
+        }
+      }
+    }
+
+    .column {
+      &.iconColumn {
+        display: none;
+      }
+
+      &.actionColumn {
+        display: none;
+      }
+    }
+  }
+
+  /* kinds */
+  &.kindDuel {
+    .column {
+      .icon {
+        background-color: var(--color-red);
+      }
+    }
+  }
+
+  &.kindInfo {
+    .column {
+      .icon {
+        background-color: var(--color-dark-gray);
+      }
+    }
+  }
+
+  &.kindTournament {
+    .column {
+      .icon {
+        background-color: var(--color-yellow);
+      }
+    }
+  }
+
+  &.kindWallet {
+    .column {
+      .icon {
+        background-color: var(--color-green);
+      }
+    }
+  }
+
+  .column {
+    padding: 0 5px;
+
+    .unreadStatus {
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      width: 16px;
+
+      .unreadIndicator {
+        width: 10px;
+        height: 10px;
+
+        background-color: var(--color-red);
+
+        border-radius: 50%;
+      }
+
+      svg.read {
+        display: block;
+
+        width: 100%;
+
+        fill: var(--color-white3);
+      }
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      padding: 16px;
+
+      background-color: var(--color-red);
+      border-radius: 50%;
+
+      svg {
+        display: block;
+
+        height: 100%;
+
+        fill: var(--color-white);
+      }
+    }
+
+    .body {
+      .title {
+        font-size: var(--font-size);
+        font-weight: 700;
+
+        color: var(--color-white);
+      }
+
+      .description, .dateTime {
+        color: var(--color-gray);
+
+        transition: color 100ms ease;
+      }
+
+      .description {
+        margin-top: 2px;
+
+        font-size: var(--font-size-small);
+        font-weight: 500;
+      }
+
+      .dateTime {
+        margin-top: 4px;
+
+        font-size: var(--font-size-tiny);
+        font-weight: 700;
+      }
+    }
+
+    .action {
+      font-size: var(--font-size-small);
+      font-weight: 700;
+
+      color: var(--color-red);
+    }
+  }
+}

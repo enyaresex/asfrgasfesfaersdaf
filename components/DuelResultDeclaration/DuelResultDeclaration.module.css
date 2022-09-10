@@ -1,0 +1,88 @@
+.duelResultDeclaration {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px 5px;
+
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  .muted {
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--color-gray);
+    text-align: center;
+  }
+
+  .buttonWrapper {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    .cta {
+      display: grid;
+
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-gap: 16px;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+    .notPlayed {
+      margin-top: 16px;
+
+      font-size: var(--font-size);
+      font-weight: 600;
+      color: var(--color-gray);
+      text-align: center;
+
+      cursor: pointer;
+
+      border: none;
+
+      &[data-focus-visible-added], &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .info {
+      display: grid;
+
+      grid-template-columns: auto auto;
+      grid-gap: 8px;
+
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-gray);
+
+      svg {
+        display: block;
+
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+
+@media (--min-sm) {
+  .duelResultDeclaration {
+    padding: 24px 40px;
+
+    .buttonWrapper {
+      .cta {
+        grid-template-columns: repeat(2, minmax(0px, 300px));
+        grid-gap: 22px;
+      }
+    }
+  }
+}

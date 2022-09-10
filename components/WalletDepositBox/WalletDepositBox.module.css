@@ -1,0 +1,91 @@
+.walletDepositBox {
+  display: flex;
+
+  flex-direction: column;
+
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  .header {
+    padding: 12px 10px;
+
+    font-weight: 700;
+    color: var(--color-white);
+
+    background-color: var(--color-dark-gray);
+
+    border-radius: 8px 8px 0 0;
+
+    transition: padding 150ms ease;
+  }
+
+  .body {
+    display: grid;
+
+    flex: 1;
+
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+
+    padding: 24px 10px;
+
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-gray);
+
+    transition: padding 150ms ease;
+
+    .content {
+      display: grid;
+
+      grid-template-columns: min-content auto;
+      grid-gap: 24px;
+
+      align-items: center;
+
+      svg {
+        display: block;
+
+        width: auto;
+        height: 60px;
+      }
+
+      .info {
+        .rate {
+          font-weight: 500;
+          color: var(--color-white);
+        }
+      }
+    }
+
+    .buttonWrapper {
+      display: grid;
+
+      grid-template-columns: 1fr;
+
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (--min-xs) {
+  .walletDepositBox {
+    .header {
+      padding: 12px 32px;
+    }
+
+    .body {
+      padding: 24px 32px;
+
+      .buttonWrapper {
+        grid-template-columns: repeat(4, 1fr);
+
+        .button {
+          grid-column: 2/span 2;
+        }
+      }
+    }
+  }
+}

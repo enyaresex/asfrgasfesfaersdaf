@@ -1,0 +1,52 @@
+.rival {
+  display: grid;
+
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 20px;
+
+  align-items: center;
+
+  padding: 0 10px;
+
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  .avatar {
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+
+  .details {
+    display: grid;
+
+    grid-gap: 10px;
+
+    align-items: center;
+
+    padding: 10px 0;
+
+    .username {
+      font-size: var(--font-size);
+      font-weight: 700;
+      color: var(--color-white);
+
+      .muted {
+        font-weight: 600;
+        color: var(--color-gray);
+      }
+    }
+
+    .winRate {
+      font-size: var(--font-size-smaller);
+      font-weight: 600;
+      line-height: 0.75;
+      color: var(--color-gray);
+
+      .value {
+        font-weight: 700;
+        line-height: normal;
+        color: var(--color-green);
+      }
+    }
+  }
+}

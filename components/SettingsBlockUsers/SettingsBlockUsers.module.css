@@ -1,0 +1,45 @@
+.settingsBlockUsers {
+  .empty {
+    margin: 30px 0;
+  }
+
+  .form {
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+
+  .blockedUsers {
+    display: grid;
+
+    grid-gap: 16px;
+
+    margin: 20px 0;
+  }
+}
+
+@media (--min-lg) {
+  .settingsBlockUsers {
+    .form {
+      .fieldset {
+        display: grid;
+
+        grid-template-columns: minmax(auto, 500px) min-content;
+        grid-row-gap: 16px;
+        grid-column-gap: 24px;
+
+        > * {
+          margin: 0;
+        }
+      }
+    }
+
+    .blockedUsers {
+      display: grid;
+
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      grid-gap: 10px;
+
+      margin: 20px 0;
+    }
+  }
+}

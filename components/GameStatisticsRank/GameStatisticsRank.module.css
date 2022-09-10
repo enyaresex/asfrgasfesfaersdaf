@@ -1,0 +1,117 @@
+[dir="rtl"]{
+  .gameStatisticsRank {
+    .count {
+      .inline {
+        svg {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}
+
+[dir="ltr"]{
+  .gameStatisticsRank {
+    .count {
+      .inline {
+        svg {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+
+.gameStatisticsRank {
+  &.me {
+    .user {
+      .inline {
+        color: var(--color-red);
+      }
+    }
+
+    .rankCount {
+      color: var(--color-red);
+    }
+  }
+
+  .trophies {
+    svg {
+      display: block;
+
+      width: auto;
+      height: 24px;
+
+      margin: 0 auto;
+    }
+  }
+
+  .user {
+    display: grid;
+
+    grid-template-columns: min-content;
+
+    .inline {
+      display: grid;
+
+      grid-template-columns: repeat(2, min-content);
+      grid-gap: 16px;
+
+      align-items: center;
+
+      font-size: var(--font-size-small);
+      font-weight: 600;
+      color: var(--color-white);
+      text-decoration: none;
+
+      transition: text-decoration 150ms ease;
+
+      &[data-focus-visible-added], &:hover {
+        text-decoration: underline;
+
+        .avatar {
+          transform: scale(1.2);
+        }
+      }
+
+      .avatar {
+        transition: transform 300ms ease;
+      }
+    }
+  }
+
+  .count {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-white);
+
+    .inline {
+      display: flex;
+
+      align-items: center;
+
+      font-size: var(--font-size);
+      font-weight: 600;
+      color: var(--color-white);
+
+      svg {
+        display: block;
+
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .rankCount {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-gray);
+  }
+
+  .winRate {
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--color-white);
+  }
+}

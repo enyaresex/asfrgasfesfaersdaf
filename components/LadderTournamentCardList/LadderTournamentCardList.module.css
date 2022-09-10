@@ -1,0 +1,93 @@
+[dir="rtl"] {
+  .ladderTournamentCardList {
+    .header {
+      .viewAll {
+        margin-right: 50px;
+
+        text-align: left;
+      }
+    }
+  }
+}
+
+[dir="ltr"] {
+  .ladderTournamentCardList {
+    .header {
+      .viewAll {
+        margin-left: 50px;
+
+        text-align: right;
+      }
+    }
+  }
+}
+
+.ladderTournamentCardList {
+  margin-bottom: 36px;
+
+  .header {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    .tournamentCount {
+      font-weight: 500;
+
+      color: var(--color-gray);
+    }
+
+    .viewAll {
+      font-size: var(--font-size-small);
+      font-weight: 500;
+      text-decoration: none;
+
+      color: var(--color-gray);
+
+      &[data-focus-visible-added], &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .list {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+
+  .showMoreButtonWrapper {
+    display: flex;
+
+    justify-content: center;
+
+    margin: 36px auto;
+  }
+}
+
+@media (--min-md) {
+  .ladderTournamentCardList {
+    .list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showMoreButtonWrapper {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (--min-xl) {
+  .ladderTournamentCardList {
+    .list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .showMoreButtonWrapper {
+      max-width: 50%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Shield Cancel/Primary </title>
+    <g id="Profile-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gamer-Arena-Profile-1-576px" transform="translate(-51.000000, -1093.000000)">
+            <g id="Stats" transform="translate(24.000000, 959.000000)">
+                <g id="Icons/Shield-Cancel/Secondary-" transform="translate(24.000000, 131.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="36" height="36"></rect>
+                    <path d="M14.625,12.09375 L21.375,18.84375 M30.9791033,8.43394452 C33.6812261,11.2276056 25.344091,31.5 18.098352,31.5 C10.8530348,31.5 1.88181848,11.8827786 5.21802251,8.43394452 C6.85279624,6.74348847 12.4249489,4.45101576 17.9996327,4.50079709 C23.7987552,4.55268781 29.6012527,7.00969205 30.9791033,8.43394452 Z M14.625,18.84375 L21.375,12.09375" id="Shield-Cancel" stroke="#959AA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

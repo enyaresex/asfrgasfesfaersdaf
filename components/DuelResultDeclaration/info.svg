@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Info/Selected</title>
+    <g id="Duel-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gamer-Arena--Duel-Detail---Host-8-360px" transform="translate(-16.000000, -375.000000)">
+            <g id="Join-Duel" transform="translate(8.695652, 239.000000)">
+                <g id="Icons/Info/Selected" transform="translate(5.434783, 134.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M12,3 C7.0374,3 3,7.0374 3,12 C3,16.9626 7.0374,21 12,21 C16.9626,21 21,16.9626 21,12 C21,7.0374 16.9626,3 12,3 M12,19.2 C8.0301,19.2 4.8,15.9699 4.8,12 C4.8,8.0301 8.0301,4.8 12,4.8 C15.9699,4.8 19.2,8.0301 19.2,12 C19.2,15.9699 15.9699,19.2 12,19.2 M12.9,14.7 L12.9,12 C12.9,11.5029437 12.4970563,11.1 12,11.1 L11.1,11.1 C10.6029437,11.1 10.2,11.5029437 10.2,12 C10.2,12.4970563 10.6029437,12.9 11.1,12.9 L11.1,15.6 C11.1,16.0970563 11.5029437,16.5 12,16.5 L12.9,16.5 C13.3970563,16.5 13.8,16.0970563 13.8,15.6 C13.8,15.1029437 13.3970563,14.7 12.9,14.7 M12,9.39 C12.5467619,9.39 12.99,8.9467619 12.99,8.4 C12.99,7.8532381 12.5467619,7.41 12,7.41 C11.4532381,7.41 11.01,7.8532381 11.01,8.4 C11.01,8.9467619 11.4532381,9.39 12,9.39" id="Shape" stroke="#111217" stroke-width="0.5" fill="#EB2C44" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

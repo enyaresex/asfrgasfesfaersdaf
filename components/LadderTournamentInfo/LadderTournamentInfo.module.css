@@ -1,0 +1,97 @@
+.ladderTournamentInfo {
+  background-color: var(--color-black3);
+  border-radius: 8px;
+
+  .header {
+    padding: 12px 10px;
+
+    font-weight: 700;
+    color: var(--color-white);
+
+    background-color: var(--color-dark-gray);
+
+    border-radius: 8px 8px 0 0;
+
+    transition: padding 150ms ease;
+  }
+
+  .body {
+    display: grid;
+
+    grid-gap: 16px;
+
+    padding: 24px 10px;
+
+    border-radius: 0 0 8px 8px;
+
+    .info {
+      display: grid;
+
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 16px;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px 0;
+
+      font-size: var(--font-size);
+      font-weight: 600;
+      color: var(--color-white);
+
+      background-color: var(--color-dark-gray);
+      border-radius: 8px;
+
+      transition: padding 150ms ease;
+
+      .infoWrapper {
+        min-width: 90px;
+
+        .muted {
+          font-size: var(--font-size-small);
+          font-weight: 600;
+          color: var(--color-gray);
+        }
+      }
+
+      svg {
+        display: block;
+
+        width: auto;
+        height: 20px;
+      }
+
+      &.startsAt {
+        svg {
+          height: 22px;
+
+          > * {
+            stroke: var(--color-green);
+          }
+        }
+      }
+
+      &.endsAt {
+        svg {
+          height: 22px;
+
+          > * {
+            stroke: var(--color-red);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-xs) {
+  .ladderTournamentInfo {
+    .header {
+      padding: 12px 32px;
+    }
+
+    .body {
+      padding: 24px;
+    }
+  }
+}

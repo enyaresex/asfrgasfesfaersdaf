@@ -1,0 +1,100 @@
+.leaderboard {
+  .container {
+    .tabs {
+      margin: 30px 0;
+
+      .generalWrapper {
+        .col {
+          display: flex;
+
+          justify-content: space-between;
+
+          flex-wrap: wrap;
+
+          > * {
+            width: 100%;
+
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-md) {
+  .leaderboard {
+    .container {
+      .tabs {
+        .generalWrapper {
+          .col {
+            .tournamentInfo, .tournamentPrizes {
+              width: calc(50% - 12px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (--min-lg) {
+  [dir="rtl"] {
+    .leaderboard {
+      .container {
+        .tabs {
+          .generalWrapper {
+            .col {
+              &:first-child {
+                margin-left: 2%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  [dir="ltr"] {
+    .leaderboard {
+      .container {
+        .tabs {
+          .generalWrapper {
+            .col {
+              &:first-child {
+                margin-right: 2%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .leaderboard {
+    .container {
+      .tabs {
+        .generalWrapper {
+          display: flex;
+
+          .col {
+            justify-content: flex-start;
+            flex-flow: column wrap;
+
+            &:first-child {
+              width: 60%;
+            }
+
+            &:last-child {
+              width: 100%;
+            }
+
+            .tournamentInfo, .tournamentPrizes {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
